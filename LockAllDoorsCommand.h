@@ -13,7 +13,9 @@ public:
     LockAllDoorsCommand(Room* room) : room(room) {}
 
     // Override execute method to lock all doors
-    void execute() override {}
+    void execute() override {
+        room->performAction("Lock");
+    }
 
     ~LockAllDoorsCommand() {}
 };

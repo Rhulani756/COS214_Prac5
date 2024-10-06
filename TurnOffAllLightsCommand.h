@@ -1,5 +1,4 @@
 
-
 #ifndef PRAC_5_TURNOFFALLLIGHTSCOMMAND_H
 #define PRAC_5_TURNOFFALLLIGHTSCOMMAND_H
 
@@ -15,7 +14,9 @@ public:
     TurnOffAllLightsCommand(Room* room) : room(room) {}
 
     // Override execute method to turn off all lights
-    void execute() override {}
+    void execute() override {
+        room->performAction("ToggleOff");
+    }
 
     ~TurnOffAllLightsCommand() {}
 };

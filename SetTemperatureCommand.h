@@ -16,7 +16,9 @@ public:
     SetTemperatureCommand(Room* room, int temp) : room(room), temperature(temp) {}
 
     // Override execute method to set the temperature
-    void execute() override {}
+    void execute() override {
+        room->performAction("ToggleOn");
+    }
 
     ~SetTemperatureCommand() {}
 };
