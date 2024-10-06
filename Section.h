@@ -9,32 +9,68 @@
 #include <vector>
 #include "SmartComponent.h"
 
+/**
+ * @brief Represents a section of the smart home, which can consist of multiple rooms.
+ *
+ * The Section class is a composite of SmartComponents and is used to manage a group of rooms
+ * in a smart home system. It allows for actions to be performed on all rooms within the section
+ * and maintains the status of the entire section.
+ */
 class Section : public SmartComponent {
 private:
-    std::string sectionName;
-    std::vector<SmartComponent*> rooms;
+    std::string sectionName; /**< Name of the section (e.g., "Living Area", "Bedroom"). */
+    std::vector<SmartComponent*> rooms; /**< List of rooms (SmartComponents) in the section. */
 
 public:
-    // Default Constructor
+    /**
+     * @brief Default constructor for Section.
+     *
+     * Initializes a Section object with no name and an empty list of rooms.
+     */
     Section();
 
-    // Constructor with section name
+    /**
+     * @brief Constructor with section name.
+     *
+     * @param name The name of the section to be created.
+     */
     Section(const std::string& name);
 
-    // Add a SmartComponent (e.g., Room) to the section
+    /**
+     * @brief Adds a room (SmartComponent) to the section.
+     *
+     * @param room Pointer to a SmartComponent representing the room to be added.
+     */
     void add(SmartComponent* room);
 
-    // Remove a SmartComponent from the section
+    /**
+     * @brief Removes a room (SmartComponent) from the section.
+     *
+     * @param room Pointer to a SmartComponent representing the room to be removed.
+     */
     void remove(SmartComponent* room);
 
-    // Perform a specified action on all rooms in the section
+    /**
+     * @brief Perform a specified action on all rooms in the section.
+     *
+     * @param action The action to be performed on each room in the section (e.g., "turn off lights").
+     */
     void performAction(const std::string& action) override;
 
-    // Get the status of the section
+    /**
+     * @brief Get the status of the section.
+     *
+     * @return A string representing the current status of the section, which may aggregate
+     * the status of all rooms in the section.
+     */
     std::string getStatus() override;
 
-    // Destructor
+    /**
+     * @brief Destructor for Section.
+     *
+     * Cleans up resources allocated for the Section, including its list of rooms.
+     */
     ~Section();
-
+};
 
 #endif //PRAC_5_SECTION_H

@@ -12,7 +12,7 @@ std::string DoorLock::getStatus() {
     return status;
 }
 
-void DoorLock::performAction(std::string& action) {
+void DoorLock::performAction(const std::string& action) {
     if (action == "Lock") {
         status = "locked";
         std::cout << "Door is now LOCKED" << std::endl;

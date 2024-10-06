@@ -7,7 +7,7 @@ Room::Room() {
     roomName = "Unknown room";
 }
 
-Room::Room(std::string roomName) {
+Room::Room(std::string &roomName) {
     this->roomName = roomName;
 }
 
@@ -19,7 +19,7 @@ void Room::remove(SmartComponent *device) {
     this->devices.pop_back();
 }
 
-void Room::performAction(std::string& action) {
+void Room::performAction(const std::string& action) {
     for (SmartComponent* device : devices) {
         device->performAction(action);
     }

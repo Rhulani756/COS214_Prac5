@@ -16,7 +16,7 @@ std::string Light::getDeviceType() {
     return "light";
 }
 
-void Light::performAction(std::string& action) {
+void Light::performAction(const std::string& action) {
     if (action == "ToggleOn") {
         status = "on";
         std::cout << "Light is now ON" << std::endl;
