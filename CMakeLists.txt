@@ -15,4 +15,22 @@ add_executable(Practical5 main.cpp
         DoorLock.cpp
         DoorLock.h
         Room.cpp
-        Room.h)
+        Room.h
+        TurnOffAllLightsCommand.h
+        TurnOffAllLightsCommand.cpp
+        SmartThermostatIntegrator.h
+        SmartThermostatIntegrator.cpp
+        SetTemperatureCommand.h
+        SetTemperatureCommand.cpp
+        Sensor.h
+        Sensor.cpp
+        Section.h
+        Section.cpp
+        MotionSensor.h
+        MotionSensor.cpp
+        MacroRoutine.h
+        MacroRoutine.cpp
+        LockAllDoorsCommand.h
+        LockAllDoorsCommand.cpp
+        LegacyThermostat.cpp
+        Command.cpp)

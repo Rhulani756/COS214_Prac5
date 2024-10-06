@@ -5,7 +5,7 @@
 
 class SmartComponent {
 public:
-    virtual void performAction(std::string action) = 0;
+    virtual void performAction(std::string& action) = 0;
     virtual std::string getStatus() = 0;
     virtual ~SmartComponent() {};
 };

@@ -91,6 +91,66 @@ build CMakeFiles/Practical5.dir/Room.cpp.obj: CXX_COMPILER__Practical5_unscanned
   OBJECT_DIR = CMakeFiles\Practical5.dir
   OBJECT_FILE_DIR = CMakeFiles\Practical5.dir
 
+build CMakeFiles/Practical5.dir/TurnOffAllLightsCommand.cpp.obj: CXX_COMPILER__Practical5_unscanned_Debug C$:/Users/rhula/Desktop/Rhulani/Computer$ Science$ Resources/Semester$ 2/COS214/Practicals/Practical5/TurnOffAllLightsCommand.cpp || cmake_object_order_depends_target_Practical5
+  DEP_FILE = CMakeFiles\Practical5.dir\TurnOffAllLightsCommand.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\Practical5.dir
+  OBJECT_FILE_DIR = CMakeFiles\Practical5.dir
+
+build CMakeFiles/Practical5.dir/SmartThermostatIntegrator.cpp.obj: CXX_COMPILER__Practical5_unscanned_Debug C$:/Users/rhula/Desktop/Rhulani/Computer$ Science$ Resources/Semester$ 2/COS214/Practicals/Practical5/SmartThermostatIntegrator.cpp || cmake_object_order_depends_target_Practical5
+  DEP_FILE = CMakeFiles\Practical5.dir\SmartThermostatIntegrator.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\Practical5.dir
+  OBJECT_FILE_DIR = CMakeFiles\Practical5.dir
+
+build CMakeFiles/Practical5.dir/SetTemperatureCommand.cpp.obj: CXX_COMPILER__Practical5_unscanned_Debug C$:/Users/rhula/Desktop/Rhulani/Computer$ Science$ Resources/Semester$ 2/COS214/Practicals/Practical5/SetTemperatureCommand.cpp || cmake_object_order_depends_target_Practical5
+  DEP_FILE = CMakeFiles\Practical5.dir\SetTemperatureCommand.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\Practical5.dir
+  OBJECT_FILE_DIR = CMakeFiles\Practical5.dir
+
+build CMakeFiles/Practical5.dir/Sensor.cpp.obj: CXX_COMPILER__Practical5_unscanned_Debug C$:/Users/rhula/Desktop/Rhulani/Computer$ Science$ Resources/Semester$ 2/COS214/Practicals/Practical5/Sensor.cpp || cmake_object_order_depends_target_Practical5
+  DEP_FILE = CMakeFiles\Practical5.dir\Sensor.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\Practical5.dir
+  OBJECT_FILE_DIR = CMakeFiles\Practical5.dir
+
+build CMakeFiles/Practical5.dir/Section.cpp.obj: CXX_COMPILER__Practical5_unscanned_Debug C$:/Users/rhula/Desktop/Rhulani/Computer$ Science$ Resources/Semester$ 2/COS214/Practicals/Practical5/Section.cpp || cmake_object_order_depends_target_Practical5
+  DEP_FILE = CMakeFiles\Practical5.dir\Section.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\Practical5.dir
+  OBJECT_FILE_DIR = CMakeFiles\Practical5.dir
+
+build CMakeFiles/Practical5.dir/MotionSensor.cpp.obj: CXX_COMPILER__Practical5_unscanned_Debug C$:/Users/rhula/Desktop/Rhulani/Computer$ Science$ Resources/Semester$ 2/COS214/Practicals/Practical5/MotionSensor.cpp || cmake_object_order_depends_target_Practical5
+  DEP_FILE = CMakeFiles\Practical5.dir\MotionSensor.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\Practical5.dir
+  OBJECT_FILE_DIR = CMakeFiles\Practical5.dir
+
+build CMakeFiles/Practical5.dir/MacroRoutine.cpp.obj: CXX_COMPILER__Practical5_unscanned_Debug C$:/Users/rhula/Desktop/Rhulani/Computer$ Science$ Resources/Semester$ 2/COS214/Practicals/Practical5/MacroRoutine.cpp || cmake_object_order_depends_target_Practical5
+  DEP_FILE = CMakeFiles\Practical5.dir\MacroRoutine.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\Practical5.dir
+  OBJECT_FILE_DIR = CMakeFiles\Practical5.dir
+
+build CMakeFiles/Practical5.dir/LockAllDoorsCommand.cpp.obj: CXX_COMPILER__Practical5_unscanned_Debug C$:/Users/rhula/Desktop/Rhulani/Computer$ Science$ Resources/Semester$ 2/COS214/Practicals/Practical5/LockAllDoorsCommand.cpp || cmake_object_order_depends_target_Practical5
+  DEP_FILE = CMakeFiles\Practical5.dir\LockAllDoorsCommand.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\Practical5.dir
+  OBJECT_FILE_DIR = CMakeFiles\Practical5.dir
+
+build CMakeFiles/Practical5.dir/LegacyThermostat.cpp.obj: CXX_COMPILER__Practical5_unscanned_Debug C$:/Users/rhula/Desktop/Rhulani/Computer$ Science$ Resources/Semester$ 2/COS214/Practicals/Practical5/LegacyThermostat.cpp || cmake_object_order_depends_target_Practical5
+  DEP_FILE = CMakeFiles\Practical5.dir\LegacyThermostat.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\Practical5.dir
+  OBJECT_FILE_DIR = CMakeFiles\Practical5.dir
+
+build CMakeFiles/Practical5.dir/Command.cpp.obj: CXX_COMPILER__Practical5_unscanned_Debug C$:/Users/rhula/Desktop/Rhulani/Computer$ Science$ Resources/Semester$ 2/COS214/Practicals/Practical5/Command.cpp || cmake_object_order_depends_target_Practical5
+  DEP_FILE = CMakeFiles\Practical5.dir\Command.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\Practical5.dir
+  OBJECT_FILE_DIR = CMakeFiles\Practical5.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target Practical5
@@ -99,7 +159,7 @@ build CMakeFiles/Practical5.dir/Room.cpp.obj: CXX_COMPILER__Practical5_unscanned
 #############################################
 # Link the executable Practical5.exe
 
-build Practical5.exe: CXX_EXECUTABLE_LINKER__Practical5_Debug CMakeFiles/Practical5.dir/main.cpp.obj CMakeFiles/Practical5.dir/SmartComponent.cpp.obj CMakeFiles/Practical5.dir/SmartDevice.cpp.obj CMakeFiles/Practical5.dir/Thermostat.cpp.obj CMakeFiles/Practical5.dir/Light.cpp.obj CMakeFiles/Practical5.dir/DoorLock.cpp.obj CMakeFiles/Practical5.dir/Room.cpp.obj
+build Practical5.exe: CXX_EXECUTABLE_LINKER__Practical5_Debug CMakeFiles/Practical5.dir/main.cpp.obj CMakeFiles/Practical5.dir/SmartComponent.cpp.obj CMakeFiles/Practical5.dir/SmartDevice.cpp.obj CMakeFiles/Practical5.dir/Thermostat.cpp.obj CMakeFiles/Practical5.dir/Light.cpp.obj CMakeFiles/Practical5.dir/DoorLock.cpp.obj CMakeFiles/Practical5.dir/Room.cpp.obj CMakeFiles/Practical5.dir/TurnOffAllLightsCommand.cpp.obj CMakeFiles/Practical5.dir/SmartThermostatIntegrator.cpp.obj CMakeFiles/Practical5.dir/SetTemperatureCommand.cpp.obj CMakeFiles/Practical5.dir/Sensor.cpp.obj CMakeFiles/Practical5.dir/Section.cpp.obj CMakeFiles/Practical5.dir/MotionSensor.cpp.obj CMakeFiles/Practical5.dir/MacroRoutine.cpp.obj CMakeFiles/Practical5.dir/LockAllDoorsCommand.cpp.obj CMakeFiles/Practical5.dir/LegacyThermostat.cpp.obj CMakeFiles/Practical5.dir/Command.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\Practical5.dir

@@ -9,7 +9,7 @@
 class SmartDevice : public SmartComponent {
 public:
     std::string status;
-    void performAction(std::string action) override;
+    void performAction(std::string& action) override;
     std::string getStatus() override;
     virtual std::string getDeviceType() = 0;
 };

@@ -12,7 +12,7 @@ public:
     Light();
     std::string getStatus() override;
     std::string getDeviceType() override;
-    void performAction(std::string action) override;
+    void performAction(std::string& action) override;
 };
 
 

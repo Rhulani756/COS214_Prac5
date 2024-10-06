@@ -11,7 +11,7 @@ private:
     int temperature;
 public:
     Thermostat();
-    void performAction(std::string action) override;
+    void performAction(std::string& action) override;
     std::string getStatus() override;
     std::string getDeviceType() override;
 };

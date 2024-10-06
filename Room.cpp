@@ -19,7 +19,7 @@ void Room::remove(SmartComponent *device) {
     this->devices.pop_back();
 }
 
-void Room::performAction(std::string action) {
+void Room::performAction(std::string& action) {
     for (SmartComponent* device : devices) {
         device->performAction(action);
     }

@@ -14,7 +14,7 @@ private:
     std::vector<SmartComponent*> devices;
     public:
     Room();
-    Room(std::string roomName);
+    Room(std::string& roomName);
     void add(SmartComponent* device);
     void remove(SmartComponent* device);
     void performAction(std::string action) override;

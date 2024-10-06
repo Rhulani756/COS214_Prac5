@@ -11,7 +11,7 @@ class DoorLock : public SmartDevice{
     public:
     DoorLock();
     std::string getStatus() override;
-    void performAction(std::string action) override;
+    void performAction(std::string& action) override;
     std::string getDeviceType() override;
 };
 
