@@ -1,3 +1,0 @@
-C:/Users/rhula/Desktop/Rhulani/Computer Science Resources/Semester 2/COS214/Practicals/Practical5/cmake-build-debug-coverage/CMakeFiles/Practical5.dir
-C:/Users/rhula/Desktop/Rhulani/Computer Science Resources/Semester 2/COS214/Practicals/Practical5/cmake-build-debug-coverage/CMakeFiles/edit_cache.dir
-C:/Users/rhula/Desktop/Rhulani/Computer Science Resources/Semester 2/COS214/Practicals/Practical5/cmake-build-debug-coverage/CMakeFiles/rebuild_cache.dir
