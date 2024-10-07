@@ -3,6 +3,7 @@
 //
 
 #include "Room.h"
+#include <algorithm>
 Room::Room() {
     roomName = "Unknown room";
 }
@@ -16,7 +17,7 @@ void Room::add(SmartComponent *device) {
 }
 
 void Room::remove(SmartComponent *device) {
-    this->devices.pop_back();
+    devices.erase(std::remove(devices.begin(), devices.end(), device), devices.end());
 }
 
 void Room::performAction(const std::string& action) {
@@ -26,10 +27,11 @@ void Room::performAction(const std::string& action) {
 }
 
 std::string Room::getStatus() {
-    std::cout << "Room: " << roomName << std::endl;
+    std::string status = "Room: " + roomName + "\n";
     for (SmartComponent* device : devices) {
-        std::cout << ": " << device->getStatus() << std::endl;
+        status += device->getStatus() + "\n";
     }
+    return status;
 }
 
 Room::~Room() {

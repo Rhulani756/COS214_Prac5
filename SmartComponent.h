@@ -37,7 +37,7 @@ public:
      *
      * Ensures proper cleanup of derived classes when a SmartComponent object is destroyed.
      */
-    virtual ~SmartComponent() {};
+    virtual ~SmartComponent() = default;
 };
 
 #endif //SMARTCOMPONENT_H

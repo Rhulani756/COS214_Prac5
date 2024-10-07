@@ -8,7 +8,7 @@ Thermostat::Thermostat() {
     status = "off";
 }
 
-void Thermostat::performAction(const std::string& action) override {
+void Thermostat::performAction(const std::string& action) {
     if (action.find("SetTemp") != std::string::npos) {
         // Extract the temperature from the action command (e.g., SetTemp24)
         temperature = stoi(action.substr(7));

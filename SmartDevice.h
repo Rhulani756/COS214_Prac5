@@ -40,7 +40,7 @@ public:
      *
      * @return A string representing the status of the device.
      */
-    std::string getStatus() override;
+    virtual std::string getStatus() = 0;
 
     /**
      * @brief Retrieves the device type.
@@ -51,6 +51,8 @@ public:
      * @return A string representing the type of the device.
      */
     virtual std::string getDeviceType() = 0;
+    virtual ~SmartDevice() ;
+
 };
 
 
