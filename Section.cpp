@@ -10,11 +10,11 @@ Section::Section() : sectionName("Unnamed Section") {}
 
 Section::Section(const std::string& name) : sectionName(name) {}
 
-void Section::add(SmartComponent* room) {
+void Section::add(Room* room) {
     rooms.push_back(room);
 }
 
-void Section::remove(SmartComponent* room) {
+void Section::remove(Room* room) {
     rooms.erase(std::remove(rooms.begin(), rooms.end(), room), rooms.end());
 
 }
@@ -34,7 +34,7 @@ std::string Section::getStatus() {
 }
 
 Section::~Section() {
-    for (SmartComponent* room : rooms) {
+    for (Room* room : rooms) {
         delete room;
     }
 }
