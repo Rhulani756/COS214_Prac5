@@ -6,6 +6,7 @@
 #include <iostream>
 
 int main() {
+std::cout<<"this is henru's part\n";
     // Create legacy thermostat and adapter
     LegacyThermostat legacyThermostat;
     SmartThermostatIntegrator smartThermostat(&legacyThermostat);
