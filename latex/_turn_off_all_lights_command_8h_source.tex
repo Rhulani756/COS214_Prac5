@@ -1,0 +1,26 @@
+\doxysection{Turn\+Off\+All\+Lights\+Command.\+h}
+\hypertarget{_turn_off_all_lights_command_8h_source}{}\label{_turn_off_all_lights_command_8h_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ PRAC\_5\_TURNOFFALLLIGHTSCOMMAND\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ PRAC\_5\_TURNOFFALLLIGHTSCOMMAND\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}Command.h"{}}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}Room.h"{}}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00016\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_turn_off_all_lights_command}{TurnOffAllLightsCommand}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_command}{Command}}\ \{}
+\DoxyCodeLine{00017\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00018\ \ \ \ \ \mbox{\hyperlink{class_room}{Room}}*\ room;\ }
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00026\ \ \ \ \ \mbox{\hyperlink{class_turn_off_all_lights_command_a25cd701841ac5d2a124e409a5a597ec4}{TurnOffAllLightsCommand}}(\mbox{\hyperlink{class_room}{Room}}*\ room)\ :\ room(room)\ \{\}}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_turn_off_all_lights_command_ae9fe440102f97088cb4f457498cba717}{execute}}()\textcolor{keyword}{\ override\ }\{}
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ room-\/>\mbox{\hyperlink{class_room_abaa2c5f450f1cb9a7bfce3fe8aa63c82}{performAction}}(\textcolor{stringliteral}{"{}ToggleOff"{}});}
+\DoxyCodeLine{00037\ \ \ \ \ \}}
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00044\ \ \ \ \ \mbox{\hyperlink{class_turn_off_all_lights_command_a0c1d5fc358439d93da935c1d0d2d1ab5}{\string~TurnOffAllLightsCommand}}()\ \{\}}
+\DoxyCodeLine{00045\ \};}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00047\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ PRAC\_5\_TURNOFFALLLIGHTSCOMMAND\_H}}
+
+\end{DoxyCode}

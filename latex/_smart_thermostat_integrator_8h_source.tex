@@ -1,0 +1,33 @@
+\doxysection{Smart\+Thermostat\+Integrator.\+h}
+\hypertarget{_smart_thermostat_integrator_8h_source}{}\label{_smart_thermostat_integrator_8h_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#ifndef\ PRAC\_5\_SMARTTHERMOSTATINTEGRATOR\_H}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#define\ PRAC\_5\_SMARTTHERMOSTATINTEGRATOR\_H}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}SmartDevice.h"{}}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}LegacyThermostat.h"{}}}
+\DoxyCodeLine{00017\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_smart_thermostat_integrator}{SmartThermostatIntegrator}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_smart_device}{SmartDevice}}\ \{}
+\DoxyCodeLine{00018\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00019\ \ \ \ \ \mbox{\hyperlink{class_legacy_thermostat}{LegacyThermostat}}*\ legacyThermostat;}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00032\ \ \ \ \ \mbox{\hyperlink{class_smart_thermostat_integrator_a38b4a40017156452fb637c9140f832f5}{SmartThermostatIntegrator}}(\mbox{\hyperlink{class_legacy_thermostat}{LegacyThermostat}}*\ thermostat);}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00043\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_smart_thermostat_integrator_af5308c4ab215cf0ee7a1b5377b774178}{setTemperature}}(\textcolor{keywordtype}{int}\ temp);}
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00054\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_smart_thermostat_integrator_ac3c439528888fc576fd3b97721eb4bc4}{getTemperature}}();}
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00065\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_smart_thermostat_integrator_a7486f146305ff6370879d8339ccc03cc}{performAction}}(\textcolor{keyword}{const}\ std::string\&\ action)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00066\ }
+\DoxyCodeLine{00076\ \ \ \ \ std::string\ \mbox{\hyperlink{class_smart_thermostat_integrator_af4e977ca88815f134a593147f8763fec}{getStatus}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00077\ }
+\DoxyCodeLine{00087\ \ \ \ \ std::string\ \mbox{\hyperlink{class_smart_thermostat_integrator_ad91651a4e38491005d0d444f054364a2}{getDeviceType}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00088\ \ \ }
+\DoxyCodeLine{00089\ \};}
+\DoxyCodeLine{00090\ }
+\DoxyCodeLine{00091\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

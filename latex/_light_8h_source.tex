@@ -1,0 +1,33 @@
+\doxysection{Light.\+h}
+\hypertarget{_light_8h_source}{}\label{_light_8h_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{//}}
+\DoxyCodeLine{00002\ \textcolor{comment}{//\ Created\ by\ rhula\ on\ 9/25/2024.}}
+\DoxyCodeLine{00003\ \textcolor{comment}{//}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#ifndef\ LIGHT\_H}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#define\ LIGHT\_H}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}SmartDevice.h"{}}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ "{}MotionSensor.h"{}}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00017\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_light}{Light}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_smart_device}{SmartDevice}}\ \{}
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00019\ \ \ \ \ \mbox{\hyperlink{class_motion_sensor}{MotionSensor}}*\ motionSensor;\ \textcolor{comment}{//\ Pointer\ to\ a\ MotionSensor\ instance}}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00027\ \ \ \ \ \mbox{\hyperlink{class_light_aeb5df09a25a32f19fdffa761268ba24f}{Light}}();}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00036\ \ \ \ \ std::string\ \mbox{\hyperlink{class_light_a47ed56c4855b6e5d936e97675a4fb094}{getStatus}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00045\ \ \ \ \ std::string\ \mbox{\hyperlink{class_light_a5b234c850599669a908f4c46395bf804}{getDeviceType}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00055\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_light_af4693d90a3ba98a0d6980f817a9e3dd6}{performAction}}(\textcolor{keyword}{const}\ std::string\&\ action)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00063\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_light_a923c5625ec556ce1413b31a6ba84c28f}{update}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00064\ \ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{class_light}{\string~Light}}()\textcolor{keyword}{\ override\ }\{}
+\DoxyCodeLine{00065\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Any\ specific\ cleanup\ for\ Light}}
+\DoxyCodeLine{00066\ \ \ \ \ \}}
+\DoxyCodeLine{00067\ \};}
+\DoxyCodeLine{00068\ }
+\DoxyCodeLine{00069\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//LIGHT\_H}}
+
+\end{DoxyCode}

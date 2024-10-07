@@ -56,6 +56,7 @@ public:
      * when motion is detected.
      */
     void notifyDevices() override;
+    virtual ~MotionSensor();
 };
 
 #endif //PRAC_5_MOTIONSENSOR_H

@@ -1,0 +1,93 @@
+\doxysection{Macro\+Routine Class Reference}
+\hypertarget{class_macro_routine}{}\label{class_macro_routine}\index{MacroRoutine@{MacroRoutine}}
+
+
+Class that encapsulates a series of commands to be executed in sequence.  
+
+
+
+
+{\ttfamily \#include $<$Macro\+Routine.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_macro_routine_a0e94cf520476dec28ee97ad5dbb8e444}{add\+Procedure}} (\mbox{\hyperlink{class_command}{Command}} \texorpdfstring{$\ast$}{*}command)
+\begin{DoxyCompactList}\small\item\em Add a command to the macro routine. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_macro_routine_ad4382ae3dfb1577e4c54a8639395df33}{remove\+Procedure}} (\mbox{\hyperlink{class_command}{Command}} \texorpdfstring{$\ast$}{*}procedure)
+\begin{DoxyCompactList}\small\item\em Remove a command from the macro routine. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_macro_routine_a9be008e6776157d943f2c637c8003129}{execute}} ()
+\begin{DoxyCompactList}\small\item\em Execute all commands in the macro routine. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_macro_routine_a9abe17342df7ffc586308427c863793e}{\texorpdfstring{$\sim$}{\string~}\+Macro\+Routine}} ()
+\begin{DoxyCompactList}\small\item\em Destructor to free dynamically allocated memory. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class that encapsulates a series of commands to be executed in sequence. 
+
+The \doxylink{class_macro_routine}{Macro\+Routine} class manages a collection of \doxylink{class_command}{Command} objects. It allows users to add and remove commands, and execute them in the order they were added. This is useful for automating complex tasks that involve multiple steps. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_macro_routine_a9abe17342df7ffc586308427c863793e}\index{MacroRoutine@{MacroRoutine}!````~MacroRoutine@{\texorpdfstring{$\sim$}{\string~}MacroRoutine}}
+\index{````~MacroRoutine@{\texorpdfstring{$\sim$}{\string~}MacroRoutine}!MacroRoutine@{MacroRoutine}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}MacroRoutine()}{\string~MacroRoutine()}}
+{\footnotesize\ttfamily \label{class_macro_routine_a9abe17342df7ffc586308427c863793e} 
+Macro\+Routine\+::\texorpdfstring{$\sim$}{\string~}\+Macro\+Routine (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Destructor to free dynamically allocated memory. 
+
+This destructor ensures that any dynamically allocated \doxylink{class_command}{Command} objects are properly deleted to prevent memory leaks. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_macro_routine_a0e94cf520476dec28ee97ad5dbb8e444}\index{MacroRoutine@{MacroRoutine}!addProcedure@{addProcedure}}
+\index{addProcedure@{addProcedure}!MacroRoutine@{MacroRoutine}}
+\doxysubsubsection{\texorpdfstring{addProcedure()}{addProcedure()}}
+{\footnotesize\ttfamily \label{class_macro_routine_a0e94cf520476dec28ee97ad5dbb8e444} 
+void Macro\+Routine\+::add\+Procedure (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_command}{Command}} \texorpdfstring{$\ast$}{*}}]{command}{}\end{DoxyParamCaption})}
+
+
+
+Add a command to the macro routine. 
+
+This function takes a pointer to a \doxylink{class_command}{Command} object and adds it to the list of procedures to be executed.
+
+
+\begin{DoxyParams}{Parameters}
+{\em command} & Pointer to the \doxylink{class_command}{Command} object to be added. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_macro_routine_a9be008e6776157d943f2c637c8003129}\index{MacroRoutine@{MacroRoutine}!execute@{execute}}
+\index{execute@{execute}!MacroRoutine@{MacroRoutine}}
+\doxysubsubsection{\texorpdfstring{execute()}{execute()}}
+{\footnotesize\ttfamily \label{class_macro_routine_a9be008e6776157d943f2c637c8003129} 
+void Macro\+Routine\+::execute (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Execute all commands in the macro routine. 
+
+This function iterates through the list of commands and calls the \doxylink{class_macro_routine_a9be008e6776157d943f2c637c8003129}{execute()} method on each one, effectively running all commands in the macro routine. \Hypertarget{class_macro_routine_ad4382ae3dfb1577e4c54a8639395df33}\index{MacroRoutine@{MacroRoutine}!removeProcedure@{removeProcedure}}
+\index{removeProcedure@{removeProcedure}!MacroRoutine@{MacroRoutine}}
+\doxysubsubsection{\texorpdfstring{removeProcedure()}{removeProcedure()}}
+{\footnotesize\ttfamily \label{class_macro_routine_ad4382ae3dfb1577e4c54a8639395df33} 
+void Macro\+Routine\+::remove\+Procedure (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_command}{Command}} \texorpdfstring{$\ast$}{*}}]{procedure}{}\end{DoxyParamCaption})}
+
+
+
+Remove a command from the macro routine. 
+
+This function removes a specified \doxylink{class_command}{Command} object from the list of procedures.
+
+
+\begin{DoxyParams}{Parameters}
+{\em procedure} & Pointer to the \doxylink{class_command}{Command} object to be removed. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Macro\+Routine.\+h\item 
+Macro\+Routine.\+cpp\end{DoxyCompactItemize}

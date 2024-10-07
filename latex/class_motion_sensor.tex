@@ -1,0 +1,121 @@
+\doxysection{Motion\+Sensor Class Reference}
+\hypertarget{class_motion_sensor}{}\label{class_motion_sensor}\index{MotionSensor@{MotionSensor}}
+
+
+Represents a motion sensor in the smart home system.  
+
+
+
+
+{\ttfamily \#include $<$Motion\+Sensor.\+h$>$}
+
+Inheritance diagram for Motion\+Sensor\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_motion_sensor}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_motion_sensor_a719d6cc25a00c3f40e8bc3d944b5b3a9}{Motion\+Sensor}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor for the \doxylink{class_motion_sensor}{Motion\+Sensor} class. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_motion_sensor_a0ff9b9aaeaef899f021a40a534a6094b}{detect\+Motion}} ()
+\begin{DoxyCompactList}\small\item\em Detects motion. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_motion_sensor_a97545d3b728e0eb327eeb993cbba825a}{reset\+Sensor}} ()
+\begin{DoxyCompactList}\small\item\em Resets the motion sensor. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_motion_sensor_a682397fbe036d54cc08111ba04a34fdf}{getmotion}} ()
+\begin{DoxyCompactList}\small\item\em Retrieves the motion detection status. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_motion_sensor_a1b3dcb9e0db1469b616d30780dd37941}{notify\+Devices}} () override
+\begin{DoxyCompactList}\small\item\em Notifies all registered smart devices about motion detection. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_sensor}{Sensor}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{class_sensor_a387919f060b66074dbd107ed1764f8f6}{\texorpdfstring{$\sim$}{\string~}\+Sensor}} ()=default
+\begin{DoxyCompactList}\small\item\em Virtual destructor for the \doxylink{class_sensor}{Sensor} class. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_sensor_a7a1279774b785fe8a2099e52ae31013a}{add\+Device}} (\mbox{\hyperlink{class_smart_device}{Smart\+Device}} \texorpdfstring{$\ast$}{*}device)
+\begin{DoxyCompactList}\small\item\em Adds a smart device to the list of devices to be notified. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_sensor_a0e951bf6c97ced5e353b36c626781d95}{remove\+Device}} (\mbox{\hyperlink{class_smart_device}{Smart\+Device}} \texorpdfstring{$\ast$}{*}device)
+\begin{DoxyCompactList}\small\item\em Removes a smart device from the list of devices to be notified. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_sensor}{Sensor}}}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{class_smart_device}{Smart\+Device}} \texorpdfstring{$\ast$}{*} $>$ {\bfseries devices}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents a motion sensor in the smart home system. 
+
+The \doxylink{class_motion_sensor}{Motion\+Sensor} class extends the \doxylink{class_sensor}{Sensor} class and implements functionality to detect motion and notify registered smart devices about the detected motion events. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_motion_sensor_a719d6cc25a00c3f40e8bc3d944b5b3a9}\index{MotionSensor@{MotionSensor}!MotionSensor@{MotionSensor}}
+\index{MotionSensor@{MotionSensor}!MotionSensor@{MotionSensor}}
+\doxysubsubsection{\texorpdfstring{MotionSensor()}{MotionSensor()}}
+{\footnotesize\ttfamily \label{class_motion_sensor_a719d6cc25a00c3f40e8bc3d944b5b3a9} 
+Motion\+Sensor\+::\+Motion\+Sensor (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Default constructor for the \doxylink{class_motion_sensor}{Motion\+Sensor} class. 
+
+Initializes a new \doxylink{class_motion_sensor}{Motion\+Sensor} instance and sets the initial motion detection state to false. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_motion_sensor_a0ff9b9aaeaef899f021a40a534a6094b}\index{MotionSensor@{MotionSensor}!detectMotion@{detectMotion}}
+\index{detectMotion@{detectMotion}!MotionSensor@{MotionSensor}}
+\doxysubsubsection{\texorpdfstring{detectMotion()}{detectMotion()}}
+{\footnotesize\ttfamily \label{class_motion_sensor_a0ff9b9aaeaef899f021a40a534a6094b} 
+void Motion\+Sensor\+::detect\+Motion (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Detects motion. 
+
+This method simulates the detection of motion, setting the {\ttfamily motion\+Detected} state to true and notifying registered devices. \Hypertarget{class_motion_sensor_a682397fbe036d54cc08111ba04a34fdf}\index{MotionSensor@{MotionSensor}!getmotion@{getmotion}}
+\index{getmotion@{getmotion}!MotionSensor@{MotionSensor}}
+\doxysubsubsection{\texorpdfstring{getmotion()}{getmotion()}}
+{\footnotesize\ttfamily \label{class_motion_sensor_a682397fbe036d54cc08111ba04a34fdf} 
+bool Motion\+Sensor\+::getmotion (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Retrieves the motion detection status. 
+
+This method returns the current state of motion detection.
+
+\begin{DoxyReturn}{Returns}
+True if motion is detected; otherwise, false. 
+\end{DoxyReturn}
+\Hypertarget{class_motion_sensor_a1b3dcb9e0db1469b616d30780dd37941}\index{MotionSensor@{MotionSensor}!notifyDevices@{notifyDevices}}
+\index{notifyDevices@{notifyDevices}!MotionSensor@{MotionSensor}}
+\doxysubsubsection{\texorpdfstring{notifyDevices()}{notifyDevices()}}
+{\footnotesize\ttfamily \label{class_motion_sensor_a1b3dcb9e0db1469b616d30780dd37941} 
+void Motion\+Sensor\+::notify\+Devices (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Notifies all registered smart devices about motion detection. 
+
+This method overrides the pure virtual function in the \doxylink{class_sensor}{Sensor} class to implement the notification logic for registered devices when motion is detected. 
+
+Implements \mbox{\hyperlink{class_sensor_a129501bd5f35310e8a155d8758b16f80}{Sensor}}.
+
+\Hypertarget{class_motion_sensor_a97545d3b728e0eb327eeb993cbba825a}\index{MotionSensor@{MotionSensor}!resetSensor@{resetSensor}}
+\index{resetSensor@{resetSensor}!MotionSensor@{MotionSensor}}
+\doxysubsubsection{\texorpdfstring{resetSensor()}{resetSensor()}}
+{\footnotesize\ttfamily \label{class_motion_sensor_a97545d3b728e0eb327eeb993cbba825a} 
+void Motion\+Sensor\+::reset\+Sensor (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Resets the motion sensor. 
+
+This method resets the sensor state, setting {\ttfamily motion\+Detected} to false, indicating that no motion is currently detected. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Motion\+Sensor.\+h\item 
+Motion\+Sensor.\+cpp\end{DoxyCompactItemize}

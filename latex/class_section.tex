@@ -1,0 +1,157 @@
+\doxysection{Section Class Reference}
+\hypertarget{class_section}{}\label{class_section}\index{Section@{Section}}
+
+
+Represents a section of the smart home, which can consist of multiple rooms.  
+
+
+
+
+{\ttfamily \#include $<$Section.\+h$>$}
+
+Inheritance diagram for Section\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_section}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_section_a77b88e06692841ba49559d22a25a09f9}{Section}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor for \doxylink{class_section}{Section}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_section_af41ef1cc860e8f1cf6ee7e0fef704053}{Section}} (const std\+::string \&name)
+\begin{DoxyCompactList}\small\item\em Constructor with section name. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_section_a78f8404b6c3149613474035529623cac}{add}} (\mbox{\hyperlink{class_smart_component}{Smart\+Component}} \texorpdfstring{$\ast$}{*}room)
+\begin{DoxyCompactList}\small\item\em Adds a room (\doxylink{class_smart_component}{Smart\+Component}) to the section. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_section_a4dd41a90d4ceb70194e460191fefff25}{remove}} (\mbox{\hyperlink{class_smart_component}{Smart\+Component}} \texorpdfstring{$\ast$}{*}room)
+\begin{DoxyCompactList}\small\item\em Removes a room (\doxylink{class_smart_component}{Smart\+Component}) from the section. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_section_a36515f434481cf91103361c4c9d5f029}{perform\+Action}} (const std\+::string \&action) override
+\begin{DoxyCompactList}\small\item\em Perform a specified action on all rooms in the section. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_section_af034ec32ecd1b3467d5161ab4b2b983b}{get\+Status}} () override
+\begin{DoxyCompactList}\small\item\em Get the status of the section. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_section_ae2582a77c7ecb8cbd4a1b58e7ad3296e}{\texorpdfstring{$\sim$}{\string~}\+Section}} ()
+\begin{DoxyCompactList}\small\item\em Destructor for \doxylink{class_section}{Section}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_smart_component}{Smart\+Component}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{class_smart_component_a19afd1a9dd9eb011141e1c923389e7dc}{\texorpdfstring{$\sim$}{\string~}\+Smart\+Component}} ()=default
+\begin{DoxyCompactList}\small\item\em Virtual destructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents a section of the smart home, which can consist of multiple rooms. 
+
+The \doxylink{class_section}{Section} class is a composite of Smart\+Components and is used to manage a group of rooms in a smart home system. It allows for actions to be performed on all rooms within the section and maintains the status of the entire section. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_section_a77b88e06692841ba49559d22a25a09f9}\index{Section@{Section}!Section@{Section}}
+\index{Section@{Section}!Section@{Section}}
+\doxysubsubsection{\texorpdfstring{Section()}{Section()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_section_a77b88e06692841ba49559d22a25a09f9} 
+Section\+::\+Section (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Default constructor for \doxylink{class_section}{Section}. 
+
+Initializes a \doxylink{class_section}{Section} object with no name and an empty list of rooms. \Hypertarget{class_section_af41ef1cc860e8f1cf6ee7e0fef704053}\index{Section@{Section}!Section@{Section}}
+\index{Section@{Section}!Section@{Section}}
+\doxysubsubsection{\texorpdfstring{Section()}{Section()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_section_af41ef1cc860e8f1cf6ee7e0fef704053} 
+Section\+::\+Section (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name}{}\end{DoxyParamCaption})}
+
+
+
+Constructor with section name. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the section to be created. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_section_ae2582a77c7ecb8cbd4a1b58e7ad3296e}\index{Section@{Section}!````~Section@{\texorpdfstring{$\sim$}{\string~}Section}}
+\index{````~Section@{\texorpdfstring{$\sim$}{\string~}Section}!Section@{Section}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Section()}{\string~Section()}}
+{\footnotesize\ttfamily \label{class_section_ae2582a77c7ecb8cbd4a1b58e7ad3296e} 
+Section\+::\texorpdfstring{$\sim$}{\string~}\+Section (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Destructor for \doxylink{class_section}{Section}. 
+
+Cleans up resources allocated for the \doxylink{class_section}{Section}, including its list of rooms. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_section_a78f8404b6c3149613474035529623cac}\index{Section@{Section}!add@{add}}
+\index{add@{add}!Section@{Section}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily \label{class_section_a78f8404b6c3149613474035529623cac} 
+void Section\+::add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_smart_component}{Smart\+Component}} \texorpdfstring{$\ast$}{*}}]{room}{}\end{DoxyParamCaption})}
+
+
+
+Adds a room (\doxylink{class_smart_component}{Smart\+Component}) to the section. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em room} & Pointer to a \doxylink{class_smart_component}{Smart\+Component} representing the room to be added. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_section_af034ec32ecd1b3467d5161ab4b2b983b}\index{Section@{Section}!getStatus@{getStatus}}
+\index{getStatus@{getStatus}!Section@{Section}}
+\doxysubsubsection{\texorpdfstring{getStatus()}{getStatus()}}
+{\footnotesize\ttfamily \label{class_section_af034ec32ecd1b3467d5161ab4b2b983b} 
+std\+::string Section\+::get\+Status (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get the status of the section. 
+
+\begin{DoxyReturn}{Returns}
+A string representing the current status of the section, which may aggregate the status of all rooms in the section. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_smart_component_acb760151b7f57aa520c6929646985c5d}{Smart\+Component}}.
+
+\Hypertarget{class_section_a36515f434481cf91103361c4c9d5f029}\index{Section@{Section}!performAction@{performAction}}
+\index{performAction@{performAction}!Section@{Section}}
+\doxysubsubsection{\texorpdfstring{performAction()}{performAction()}}
+{\footnotesize\ttfamily \label{class_section_a36515f434481cf91103361c4c9d5f029} 
+void Section\+::perform\+Action (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{action}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Perform a specified action on all rooms in the section. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em action} & The action to be performed on each room in the section (e.\+g., "{}turn off lights"{}). \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_smart_component_a8a946083983fb0697f51f8b7f5065d9d}{Smart\+Component}}.
+
+\Hypertarget{class_section_a4dd41a90d4ceb70194e460191fefff25}\index{Section@{Section}!remove@{remove}}
+\index{remove@{remove}!Section@{Section}}
+\doxysubsubsection{\texorpdfstring{remove()}{remove()}}
+{\footnotesize\ttfamily \label{class_section_a4dd41a90d4ceb70194e460191fefff25} 
+void Section\+::remove (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_smart_component}{Smart\+Component}} \texorpdfstring{$\ast$}{*}}]{room}{}\end{DoxyParamCaption})}
+
+
+
+Removes a room (\doxylink{class_smart_component}{Smart\+Component}) from the section. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em room} & Pointer to a \doxylink{class_smart_component}{Smart\+Component} representing the room to be removed. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Section.\+h\item 
+Section.\+cpp\end{DoxyCompactItemize}

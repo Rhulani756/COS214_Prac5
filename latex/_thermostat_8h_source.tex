@@ -1,0 +1,30 @@
+\doxysection{Thermostat.\+h}
+\hypertarget{_thermostat_8h_source}{}\label{_thermostat_8h_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{//}}
+\DoxyCodeLine{00002\ \textcolor{comment}{//\ Created\ by\ rhula\ on\ 9/25/2024.}}
+\DoxyCodeLine{00003\ \textcolor{comment}{//}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#ifndef\ THERMOSTAT\_H}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#define\ THERMOSTAT\_H}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}SmartDevice.h"{}}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00017\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_thermostat}{Thermostat}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_smart_device}{SmartDevice}}\ \{}
+\DoxyCodeLine{00018\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keywordtype}{int}\ temperature;}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00030\ \ \ \ \ \mbox{\hyperlink{class_thermostat_a67cfc54f1cff43f4cd92c58e3be01919}{Thermostat}}();}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_thermostat_a216f08f8efeaecda81ac9e3a0191365c}{performAction}}(\textcolor{keyword}{const}\ std::string\&\ action)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00050\ \ \ \ \ std::string\ \mbox{\hyperlink{class_thermostat_afef18dd40a9f541157ee723585296bb7}{getStatus}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00051\ }
+\DoxyCodeLine{00059\ \ \ \ \ std::string\ \mbox{\hyperlink{class_thermostat_aa1b4ffd531015c3824ac690895454698}{getDeviceType}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00067\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_thermostat_a2b8d24e0d2c26c71429ba8ff543efd25}{update}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00068\ \};}
+\DoxyCodeLine{00069\ }
+\DoxyCodeLine{00070\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//THERMOSTAT\_H}}
+\DoxyCodeLine{00071\ }
+
+\end{DoxyCode}

@@ -21,3 +21,9 @@ void MotionSensor::notifyDevices() {
         device->performAction("TurnOn");
     }
 }
+MotionSensor::~MotionSensor() {
+    for (SmartDevice* device : devices) {
+        delete device; // Only if devices are dynamically allocated
+    }
+    devices.clear(); // Clear the vector to avoid dangling pointers
+}

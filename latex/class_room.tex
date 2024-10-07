@@ -1,0 +1,141 @@
+\doxysection{Room Class Reference}
+\hypertarget{class_room}{}\label{class_room}\index{Room@{Room}}
+
+
+Represents a \doxylink{class_room}{Room} which contains multiple smart devices.  
+
+
+
+
+{\ttfamily \#include $<$Room.\+h$>$}
+
+Inheritance diagram for Room\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_room}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_room_ac6ef93a7d9c3e1d624e025058d5f16ff}\label{class_room_ac6ef93a7d9c3e1d624e025058d5f16ff} 
+{\bfseries Room} ()
+\begin{DoxyCompactList}\small\item\em Default constructor for \doxylink{class_room}{Room}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_room_a19b86d4d945428fc0500686798bef0bd}{Room}} (std\+::string \&room\+Name)
+\begin{DoxyCompactList}\small\item\em Constructor that initializes a room with a specific name. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_room_a1a1a0264bc51fb2ec8bc40b9a7224a6f}{add}} (\mbox{\hyperlink{class_smart_component}{Smart\+Component}} \texorpdfstring{$\ast$}{*}device)
+\begin{DoxyCompactList}\small\item\em Adds a smart device to the room. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_room_a80fe48ac622b00dc55b00475c7f9f8c8}{remove}} (\mbox{\hyperlink{class_smart_component}{Smart\+Component}} \texorpdfstring{$\ast$}{*}device)
+\begin{DoxyCompactList}\small\item\em Removes a smart device from the room. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_room_abaa2c5f450f1cb9a7bfce3fe8aa63c82}{perform\+Action}} (const std\+::string \&action) override
+\begin{DoxyCompactList}\small\item\em Performs an action on all devices in the room. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_room_a253761d7449a7532bc2368b4fb67ea76}{get\+Status}} () override
+\begin{DoxyCompactList}\small\item\em Retrieves the current status of the room. \end{DoxyCompactList}\item 
+\Hypertarget{class_room_a6230f8d06c635a428472015cfb31f12d}\label{class_room_a6230f8d06c635a428472015cfb31f12d} 
+{\bfseries \texorpdfstring{$\sim$}{\string~}\+Room} () override
+\begin{DoxyCompactList}\small\item\em Destructor for the \doxylink{class_room}{Room} class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_smart_component}{Smart\+Component}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{class_smart_component_a19afd1a9dd9eb011141e1c923389e7dc}{\texorpdfstring{$\sim$}{\string~}\+Smart\+Component}} ()=default
+\begin{DoxyCompactList}\small\item\em Virtual destructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents a \doxylink{class_room}{Room} which contains multiple smart devices. 
+
+A \doxylink{class_room}{Room} class that inherits from \doxylink{class_smart_component}{Smart\+Component}. It stores a collection of smart devices and can perform actions on them. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_room_a19b86d4d945428fc0500686798bef0bd}\index{Room@{Room}!Room@{Room}}
+\index{Room@{Room}!Room@{Room}}
+\doxysubsubsection{\texorpdfstring{Room()}{Room()}}
+{\footnotesize\ttfamily \label{class_room_a19b86d4d945428fc0500686798bef0bd} 
+Room\+::\+Room (\begin{DoxyParamCaption}\item[{std\+::string \&}]{room\+Name}{}\end{DoxyParamCaption})}
+
+
+
+Constructor that initializes a room with a specific name. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em room\+Name} & The name of the room. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_room_a1a1a0264bc51fb2ec8bc40b9a7224a6f}\index{Room@{Room}!add@{add}}
+\index{add@{add}!Room@{Room}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily \label{class_room_a1a1a0264bc51fb2ec8bc40b9a7224a6f} 
+void Room\+::add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_smart_component}{Smart\+Component}} \texorpdfstring{$\ast$}{*}}]{device}{}\end{DoxyParamCaption})}
+
+
+
+Adds a smart device to the room. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em device} & Pointer to the \doxylink{class_smart_component}{Smart\+Component} (smart device) to be added. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_room_a253761d7449a7532bc2368b4fb67ea76}\index{Room@{Room}!getStatus@{getStatus}}
+\index{getStatus@{getStatus}!Room@{Room}}
+\doxysubsubsection{\texorpdfstring{getStatus()}{getStatus()}}
+{\footnotesize\ttfamily \label{class_room_a253761d7449a7532bc2368b4fb67ea76} 
+std\+::string Room\+::get\+Status (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Retrieves the current status of the room. 
+
+The status is typically an aggregated state of all the devices in the room.
+
+\begin{DoxyReturn}{Returns}
+A string representing the status of the room. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_smart_component_acb760151b7f57aa520c6929646985c5d}{Smart\+Component}}.
+
+\Hypertarget{class_room_abaa2c5f450f1cb9a7bfce3fe8aa63c82}\index{Room@{Room}!performAction@{performAction}}
+\index{performAction@{performAction}!Room@{Room}}
+\doxysubsubsection{\texorpdfstring{performAction()}{performAction()}}
+{\footnotesize\ttfamily \label{class_room_abaa2c5f450f1cb9a7bfce3fe8aa63c82} 
+void Room\+::perform\+Action (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{action}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Performs an action on all devices in the room. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em action} & The action to be performed (e.\+g., "{}\+Toggle\+On"{}, "{}\+Toggle\+Off"{}). \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_smart_component_a8a946083983fb0697f51f8b7f5065d9d}{Smart\+Component}}.
+
+\Hypertarget{class_room_a80fe48ac622b00dc55b00475c7f9f8c8}\index{Room@{Room}!remove@{remove}}
+\index{remove@{remove}!Room@{Room}}
+\doxysubsubsection{\texorpdfstring{remove()}{remove()}}
+{\footnotesize\ttfamily \label{class_room_a80fe48ac622b00dc55b00475c7f9f8c8} 
+void Room\+::remove (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_smart_component}{Smart\+Component}} \texorpdfstring{$\ast$}{*}}]{device}{}\end{DoxyParamCaption})}
+
+
+
+Removes a smart device from the room. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em device} & Pointer to the \doxylink{class_smart_component}{Smart\+Component} (smart device) to be removed. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Room.\+h\item 
+Room.\+cpp\end{DoxyCompactItemize}

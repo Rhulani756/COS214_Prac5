@@ -1,0 +1,29 @@
+\doxysection{Set\+Temperature\+Command.\+h}
+\hypertarget{_set_temperature_command_8h_source}{}\label{_set_temperature_command_8h_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ PRAC\_5\_SETTEMPERATURECOMMAND\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ PRAC\_5\_SETTEMPERATURECOMMAND\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}Command.h"{}}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}Room.h"{}}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00016\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_set_temperature_command}{SetTemperatureCommand}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_command}{Command}}\ \{}
+\DoxyCodeLine{00017\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00018\ \ \ \ \ \mbox{\hyperlink{class_room}{Room}}*\ room;\ }
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keywordtype}{int}\ temperature;\ }
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00028\ \ \ \ \ \mbox{\hyperlink{class_set_temperature_command_accee89bbfb694735ef3fe1c9ba150102}{SetTemperatureCommand}}(\mbox{\hyperlink{class_room}{Room}}*\ room,\ \textcolor{keywordtype}{int}\ temp)\ :\ room(room),\ temperature(temp)\ \{\}}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_set_temperature_command_a066d2743cf6454d93191356bc147dc12}{execute}}()\textcolor{keyword}{\ override\ }\{}
+\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ room-\/>\mbox{\hyperlink{class_room_abaa2c5f450f1cb9a7bfce3fe8aa63c82}{performAction}}(\textcolor{stringliteral}{"{}ToggleOn"{}});}
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Ideally,\ you\ would\ set\ the\ temperature\ here\ as\ well}}
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ This\ needs\ to\ be\ adjusted\ based\ on\ how\ you\ want\ to\ implement\ temperature\ setting}}
+\DoxyCodeLine{00042\ \ \ \ \ \}}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00049\ \ \ \ \ \mbox{\hyperlink{class_set_temperature_command_adb0eda89c8dab927a9c65705e3557069}{\string~SetTemperatureCommand}}()\ \{\}}
+\DoxyCodeLine{00050\ \};}
+\DoxyCodeLine{00051\ }
+\DoxyCodeLine{00052\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ PRAC\_5\_SETTEMPERATURECOMMAND\_H}}
+
+\end{DoxyCode}
