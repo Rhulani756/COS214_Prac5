@@ -1,3 +1,4 @@
+
 # Compiler and flags
 CXX = g++
 CXXFLAGS = -std=c++14 -g -Wall -Wextra -MMD
@@ -43,11 +44,8 @@ $(EXEC): $(OBJ)
 
 # Include the dependency files
 -include $(DEP)
-
-# Run the executable
 run: $(EXEC)
 	./$(EXEC)
-
 # Clean up build artifacts
 clean:
 	rm -f $(OBJ) $(DEP) $(EXEC)
@@ -56,8 +54,4 @@ clean:
 rebuild: clean all
 
 # Phony targets (not actual files)
-.PHONY: all clean rebuild run valgrind
-
-# Valgrind command to check for memory leaks
-valgrind:
-	valgrind --leak-check=full -s ./$(EXEC)
+.PHONY: all clean rebuild
