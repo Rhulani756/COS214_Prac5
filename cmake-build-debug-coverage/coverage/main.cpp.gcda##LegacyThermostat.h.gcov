@@ -1,0 +1,31 @@
+        -:    0:Source:A:/Take/Prac_5/COS214_Prac5/LegacyThermostat.h
+        -:    0:Graph:A:\Take\Prac_5\COS214_Prac5\cmake-build-debug-coverage\CMakeFiles\COS214_Prac5.dir\main.cpp.gcno
+        -:    0:Data:A:\Take\Prac_5\COS214_Prac5\cmake-build-debug-coverage\CMakeFiles\COS214_Prac5.dir\main.cpp.gcda
+        -:    0:Runs:1
+        -:    1:
+        -:    2:
+        -:    3:#ifndef PRAC_5_LEGACYTHERMOSTAT_H
+        -:    4:#define PRAC_5_LEGACYTHERMOSTAT_H
+        -:    5:
+        -:    6:
+        -:    7:class LegacyThermostat {
+        -:    8:private:
+        -:    9:    int legacyTemperature;
+        -:   10:
+        -:   11:public:
+        -:   12:    // Default constructor
+        -:   13:    LegacyThermostat();
+        -:   14:
+        -:   15:    // Sets the legacy temperature
+        -:   16:    void setLegacyTemperature(int temp);
+        -:   17:
+        -:   18:    // Gets the legacy temperature
+        -:   19:    int getLegacyTemperature() const;
+        -:   20:
+        -:   21:    // Destructor
+function _ZN16LegacyThermostatD1Ev called 1 returned 100% blocks executed 100%
+        1:   22:    ~LegacyThermostat() {}
+        -:   23:};
+        -:   24:
+        -:   25:
+        -:   26:#endif //PRAC_5_LEGACYTHERMOSTAT_H

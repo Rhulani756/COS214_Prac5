@@ -1,0 +1,19 @@
+# ninja log v5
+10	177	7500152891536329	CMakeFiles/COS214_Prac5.dir/Command.cpp.obj	34a8ae123335b4b5
+1	1145	7500152901297156	CMakeFiles/COS214_Prac5.dir/DoorLock.cpp.obj	3605dbc60fbf1bd7
+25	250	7500152892336351	CMakeFiles/COS214_Prac5.dir/LegacyThermostat.cpp.obj	bacf552fe754425d
+202	937	7500152899186337	CMakeFiles/COS214_Prac5.dir/MacroRoutine.cpp.obj	ab582bfc792cd939
+35	1135	7500152901217170	CMakeFiles/COS214_Prac5.dir/LockAllDoorsCommand.cpp.obj	2ce5d1a081ae5523
+251	1227	7500152902167549	CMakeFiles/COS214_Prac5.dir/MotionSensor.cpp.obj	b82dbd5d4e2e008a
+18	1240	7500152902287561	CMakeFiles/COS214_Prac5.dir/Light.cpp.obj	fa0d42c2f246b52b
+58	1302	7500152902907545	CMakeFiles/COS214_Prac5.dir/main.cpp.obj	74ada4c0ba242980
+1893	2538	7500152915307915	CMakeFiles/COS214_Prac5.dir/Sensor.cpp.obj	a85bc22186faee05
+1136	1870	7500152908547558	CMakeFiles/COS214_Prac5.dir/SetTemperatureCommand.cpp.obj	a5d3fcbcac7475bc
+1240	1893	7500152908807566	CMakeFiles/COS214_Prac5.dir/SmartDevice.cpp.obj	78aa5c8dffd5dc32
+1227	1904	7500152908897546	CMakeFiles/COS214_Prac5.dir/TurnOffAllLightsCommand.cpp.obj	a64613ac37cbbae5
+1303	1941	7500152909262780	CMakeFiles/COS214_Prac5.dir/SmartComponent.cpp.obj	81f3679289ed7cf8
+939	1949	7500152909377929	CMakeFiles/COS214_Prac5.dir/Section.cpp.obj	627d8352bdf4a2b
+1145	2049	7500152910397921	CMakeFiles/COS214_Prac5.dir/Room.cpp.obj	ed16ab243211584f
+1870	2445	7500152914377926	CMakeFiles/COS214_Prac5.dir/Thermostat.cpp.obj	c5d81f6d132c17d2
+1904	2451	7500152914427920	CMakeFiles/COS214_Prac5.dir/SmartThermostatIntegrator.cpp.obj	61531b6506fd942c
+2539	2769	7500152917597894	COS214_Prac5.exe	a4ba38f96f230f93

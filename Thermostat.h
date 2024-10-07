@@ -57,6 +57,13 @@ public:
      * @return A string representing the device type.
      */
     std::string getDeviceType() override;
+    /**
+     * @brief Updates the state of the thermostat.
+     *
+     * This method refreshes the thermostat's internal state, which could include
+     * updating the current temperature, checking its operational status,
+     * or any other necessary adjustments based on external factors.
+     */
     void update() override;
 };
 

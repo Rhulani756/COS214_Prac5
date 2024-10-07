@@ -1,0 +1,39 @@
+        -:    0:Source:A:/Take/Prac_5/COS214_Prac5/Command.h
+        -:    0:Graph:A:\Take\Prac_5\COS214_Prac5\cmake-build-debug-coverage\CMakeFiles\COS214_Prac5.dir\main.cpp.gcno
+        -:    0:Data:A:\Take\Prac_5\COS214_Prac5\cmake-build-debug-coverage\CMakeFiles\COS214_Prac5.dir\main.cpp.gcda
+        -:    0:Runs:1
+        -:    1:#ifndef PRAC_5_COMMAND_H
+        -:    2:#define PRAC_5_COMMAND_H
+        -:    3:
+        -:    4:/**
+        -:    5: * @class Command
+        -:    6: * @brief Abstract base class for implementing the Command design pattern.
+        -:    7: *
+        -:    8: * The Command class defines an interface for executing operations. It
+        -:    9: * includes a pure virtual function `execute()` that must be implemented
+        -:   10: * by derived classes. This allows for encapsulating actions and their
+        -:   11: * execution, enabling features such as undo/redo functionality or
+        -:   12: * queuing commands.
+        -:   13: */
+        -:   14:class Command {
+        -:   15:public:
+        -:   16:    /**
+        -:   17:     * @brief Pure virtual function to execute a command.
+        -:   18:     *
+        -:   19:     * This function must be overridden in derived classes to provide
+        -:   20:     * the specific implementation for the command's execution.
+        -:   21:     */
+        -:   22:    virtual void execute() = 0;
+        -:   23:
+        -:   24:    /**
+        -:   25:     * @brief Virtual destructor for the Command class.
+        -:   26:     *
+        -:   27:     * The destructor is virtual to ensure proper cleanup of derived
+        -:   28:     * classes when an object is deleted through a base class pointer.
+        -:   29:     */
+function _ZN7CommandD2Ev called 3 returned 100% blocks executed 100%
+        3:   30:    virtual ~Command() {}
+        -:   31:};
+        -:   32:
+        -:   33:#endif // PRAC_5_COMMAND_H
+        -:   34:

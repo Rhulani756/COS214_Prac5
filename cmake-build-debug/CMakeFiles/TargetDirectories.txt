@@ -1,0 +1,3 @@
+A:/Take/Prac_5/COS214_Prac5/cmake-build-debug/CMakeFiles/COS214_Prac5.dir
+A:/Take/Prac_5/COS214_Prac5/cmake-build-debug/CMakeFiles/edit_cache.dir
+A:/Take/Prac_5/COS214_Prac5/cmake-build-debug/CMakeFiles/rebuild_cache.dir

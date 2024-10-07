@@ -53,7 +53,14 @@ public:
      * @return A string representing the device type.
      */
     std::string getDeviceType() override;
-
+    /**
+     * @brief Updates the state of the door lock.
+     *
+     * This method refreshes the internal state of the door lock, which could
+     * include checking the lock's current status, monitoring for unauthorized
+     * access attempts, or implementing any necessary adjustments based on
+     * external conditions or commands.
+     */
     void update() override;
 };
 

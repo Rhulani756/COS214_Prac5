@@ -1,0 +1,649 @@
+        -:    0:Source:A:/Take/Prac_5/COS214_Prac5/main.cpp
+        -:    0:Graph:A:\Take\Prac_5\COS214_Prac5\cmake-build-debug-coverage\CMakeFiles\COS214_Prac5.dir\main.cpp.gcno
+        -:    0:Data:A:\Take\Prac_5\COS214_Prac5\cmake-build-debug-coverage\CMakeFiles\COS214_Prac5.dir\main.cpp.gcda
+        -:    0:Runs:1
+        -:    1:
+        -:    2:#include "MotionSensor.h"
+        -:    3:#include "Light.h"
+        -:    4:#include "LegacyThermostat.h"
+        -:    5:#include "SmartThermostatIntegrator.h"
+        -:    6:#include "Thermostat.h"
+        -:    7:#include "DoorLock.h"
+        -:    8:#include "Room.h"
+        -:    9:#include "MacroRoutine.h"
+        -:   10:#include "LockAllDoorsCommand.h"
+        -:   11:#include "TurnOffAllLightsCommand.h"
+        -:   12:#include "SetTemperatureCommand.h"
+        -:   13:
+        -:   14:#include <iostream>
+        -:   15:
+        -:   16:#include "Section.h"
+        -:   17:
+function _Z14testComponent1v called 1 returned 100% blocks executed 54%
+        1:   18:void testComponent1() {
+        -:   19:    // Create some smart devices
+        1:   20:    auto* light1 = new Light();
+        1:   20-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   20-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+    $$$$$:   20-block  2
+branch  6 never executed (fallthrough)
+branch  7 never executed
+    $$$$$:   20-block  3
+call    8 never executed
+        1:   21:    auto* thermostat = new Thermostat();
+        1:   21-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   21-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+    $$$$$:   21-block  2
+branch  6 never executed (fallthrough)
+branch  7 never executed
+    $$$$$:   21-block  3
+call    8 never executed
+        1:   22:    auto* doorLock = new DoorLock();
+        1:   22-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   22-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+    $$$$$:   22-block  2
+branch  6 never executed (fallthrough)
+branch  7 never executed
+    $$$$$:   22-block  3
+call    8 never executed
+        1:   23:    light1->getDeviceType();
+        1:   23-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   23-block  1
+call    3 returned 1
+    $$$$$:   23-block  2
+        1:   24:    thermostat->getDeviceType();
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   24-block  0
+call    3 returned 1
+    $$$$$:   24-block  1
+        1:   25:    doorLock->getDeviceType();
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   25-block  0
+call    3 returned 1
+    $$$$$:   25-block  1
+        -:   26:
+        -:   27:
+        -:   28:    // Create a room and add devices to it
+        2:   29:    std::string roomName = "Living Room";
+        1:   29-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+    $$$$$:   29-block  1
+        1:   30:    std::string roomName2 = "Kitchen";
+        1:   30-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+    $$$$$:   30-block  1
+        1:   31:    Room livingRoom(roomName);
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        -:   32:
+        1:   33:    livingRoom.add(light1);
+        1:   33-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   34:    livingRoom.add(thermostat);
+        1:   34-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   35:    livingRoom.add(doorLock);
+        1:   35-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        -:   36:
+        -:   37:    // Perform actions on the devices
+        1:   38:    std::cout << "Performing actions in the Living Room:" << std::endl;
+        1:   38-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   38-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        2:   39:    livingRoom.performAction("ToggleOn");  // Turn on all devices
+        1:   39-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   39-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   39-block  2
+call    6 returned 1
+    $$$$$:   39-block  3
+call    7 never executed
+    $$$$$:   39-block  4
+    $$$$$:   39-block  5
+        2:   40:    livingRoom.performAction("ToggleOff");
+        1:   40-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   40-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   40-block  2
+call    6 returned 1
+    $$$$$:   40-block  3
+call    7 never executed
+    $$$$$:   40-block  4
+    $$$$$:   40-block  5
+        2:   41:    livingRoom.performAction("Lock");
+        1:   41-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   41-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   41-block  2
+call    6 returned 1
+    $$$$$:   41-block  3
+call    7 never executed
+    $$$$$:   41-block  4
+    $$$$$:   41-block  5
+        2:   42:    livingRoom.performAction("Unlock");
+        1:   42-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   42-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   42-block  2
+call    6 returned 1
+    $$$$$:   42-block  3
+call    7 never executed
+    $$$$$:   42-block  4
+    $$$$$:   42-block  5
+        1:   43:    livingRoom.performAction("SetTemp 22");  // Set temperature on thermostat
+        1:   43-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   43-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   43-block  2
+call    6 returned 1
+    $$$$$:   43-block  3
+call    7 never executed
+    $$$$$:   43-block  4
+    $$$$$:   43-block  5
+        -:   44:
+        -:   45:    // Get and print the status of all devices in the room
+        1:   46:    std::cout << "Current status of devices in the Living Room:" << std::endl;
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   46-block  0
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   47:    std::cout << livingRoom.getStatus() << std::endl;
+        1:   47-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   47-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   47-block  2
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:   47-block  3
+call    9 returned 1
+    $$$$$:   47-block  4
+call   10 never executed
+    $$$$$:   47-block  5
+        -:   48:
+        1:   49:}
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+    $$$$$:   49-block  0
+call    3 never executed
+    $$$$$:   49-block  1
+call    4 never executed
+    $$$$$:   49-block  2
+call    5 never executed
+        -:   50:
+function _Z14testComponent2v called 1 returned 100% blocks executed 60%
+        1:   51:void testComponent2() {
+        -:   52:    // Create legacy thermostat and adapter
+        1:   53:    LegacyThermostat legacyThermostat;
+        1:   53-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   54:    SmartThermostatIntegrator smartThermostat(&legacyThermostat);
+        1:   54-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        -:   55:
+        -:   56:    // Perform actions using the adapter
+        1:   57:    smartThermostat.setTemperature(22);
+        1:   57-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   58:    std::cout << smartThermostat.getStatus() << std::endl;  // Output: Temperature: 22°C
+        1:   58-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   58-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   58-block  2
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:   58-block  3
+call    9 returned 1
+    $$$$$:   58-block  4
+call   10 never executed
+    $$$$$:   58-block  5
+        -:   59:
+        -:   60:    // Create a light and sensor
+        1:   61:    Light livingRoomLight;
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   62:    MotionSensor motionSensor;
+        1:   62-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        -:   63:
+        -:   64:    // Register the light with the motion sensor
+        1:   65:    motionSensor.addDevice(&livingRoomLight);
+        1:   65-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        -:   66:
+        -:   67:    // Detect motion and trigger notifications
+        1:   68:    motionSensor.detectMotion();  // Output: Motion detected! Notifying devices...
+        1:   68-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   69:    std::cout << livingRoomLight.getStatus() << std::endl;  // Output: Light is on
+        1:   69-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   69-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   69-block  2
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:   69-block  3
+call    9 returned 1
+    $$$$$:   69-block  4
+call   10 never executed
+    $$$$$:   69-block  5
+        1:   70:}
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+    $$$$$:   70-block  0
+call    4 never executed
+    $$$$$:   70-block  1
+call    5 never executed
+    $$$$$:   70-block  2
+call    6 never executed
+    $$$$$:   70-block  3
+call    7 never executed
+        -:   71:
+function _Z14testComponent3v called 1 returned 100% blocks executed 66%
+        1:   72:void testComponent3() {
+        1:   72-block  0
+        -:   73:    // Create a room object
+        1:   74:    std::string room_name = "Living Room";
+        1:   74-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+    $$$$$:   74-block  1
+        1:   75:    Room someRoom(room_name);
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        -:   76:
+        1:   77:    Light* light2 = new Light();
+        1:   77-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   77-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+    $$$$$:   77-block  2
+branch  6 never executed (fallthrough)
+branch  7 never executed
+    $$$$$:   77-block  3
+call    8 never executed
+        1:   78:    Thermostat* thermostat2 = new Thermostat();
+        1:   78-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   78-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+    $$$$$:   78-block  2
+branch  6 never executed (fallthrough)
+branch  7 never executed
+    $$$$$:   78-block  3
+call    8 never executed
+        1:   79:    DoorLock* doorLock2 = new DoorLock();
+        1:   79-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   79-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+    $$$$$:   79-block  2
+branch  6 never executed (fallthrough)
+branch  7 never executed
+    $$$$$:   79-block  3
+call    8 never executed
+        -:   80:
+        1:   81:    someRoom.add(light2);
+        1:   81-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   82:    someRoom.add(thermostat2);
+        1:   82-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   83:    someRoom.add(doorLock2);
+        1:   83-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        -:   84:
+        -:   85:    // Create command objects for the room dynamically
+        1:   86:    auto* lockCommand = new LockAllDoorsCommand(&someRoom);
+        1:   86-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   86-block  1
+call    3 returned 1
+        1:   87:    auto* lightsOffCommand = new TurnOffAllLightsCommand(&someRoom);
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   87-block  0
+call    3 returned 1
+        1:   88:    auto* setTempCommand = new SetTemperatureCommand(&someRoom, 22);
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   88-block  0
+call    3 returned 1
+        -:   89:
+        -:   90:    // Test individual commands
+        1:   91:    lockCommand->execute();            // Should lock all doors in the living room
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   92:    lightsOffCommand->execute();       // Should turn off all lights in the living room
+        1:   92-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   93:    setTempCommand->execute();         // Should set the temperature to 22 in the living room
+        1:   93-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        -:   94:
+        -:   95:    // Create a macro routine and add commands to it
+        1:   96:    MacroRoutine morningRoutine;
+        1:   96-block  0
+call    0 returned 1
+        1:   97:    morningRoutine.addProcedure(lockCommand);
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   98:    morningRoutine.addProcedure(lightsOffCommand);
+        1:   98-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   99:    morningRoutine.addProcedure(setTempCommand);
+        1:   99-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        -:  100:
+        -:  101:    // Execute all commands in the macro routine
+        1:  102:    std::cout << "\nExecuting morning routine...\n" << std::endl;
+        1:  102-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  102-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:  103:    morningRoutine.execute();
+        1:  103-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        -:  104:
+        -:  105:    // Clean up allocated memory
+        1:  106:}
+        1:  106-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+    $$$$$:  106-block  1
+call    3 never executed
+    $$$$$:  106-block  2
+call    4 never executed
+    $$$$$:  106-block  3
+call    5 never executed
+function _Z14testComponent4v called 1 returned 100% blocks executed 74%
+        1:  107:void testComponent4(){
+        1:  108:    MotionSensor hallwaySensor;
+        1:  108-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        -:  109:
+        -:  110:    // Create a Light instance linked to the MotionSensor
+        1:  111:    Light hallwayLight;
+        1:  111-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        -:  112:
+        -:  113:    // Link the Light to the MotionSensor for notifications
+        1:  114:    hallwaySensor.addDevice(&hallwayLight);
+        1:  114-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        -:  115:
+        -:  116:    // Test Case 1: Simulate motion detection
+        1:  117:    std::cout << "Test Case 1: Motion detected." << std::endl;
+        1:  117-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  117-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:  118:    hallwaySensor.detectMotion();  // Simulates motion
+        1:  118-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  119:    hallwaySensor.notifyDevices(); // Notifies all connected devices
+        1:  119-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  120:    hallwayLight.update();         // Should turn on the light
+        1:  120-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  121:    std::cout << "Current Light Status: " << hallwayLight.getStatus() << "\n" << std::endl;
+        1:  121-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  121-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:  121-block  2
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:  121-block  3
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:  121-block  4
+call   12 returned 1
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+        1:  121-block  5
+call   15 returned 1
+    $$$$$:  121-block  6
+call   16 never executed
+    $$$$$:  121-block  7
+        -:  122:
+        -:  123:    // Test Case 2: Simulate no motion (reset)
+        1:  124:    std::cout << "Test Case 2: No motion detected." << std::endl;
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  124-block  0
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:  125:    hallwaySensor.resetSensor();   // Resets motion sensor
+        1:  125-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  126:    hallwaySensor.notifyDevices(); // Notifies all connected devices
+        1:  126-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  127:    hallwayLight.update();         // Should turn off the light
+        1:  127-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  128:    std::cout << "Current Light Status: " << hallwayLight.getStatus() << "\n" << std::endl;
+        1:  128-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  128-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:  128-block  2
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:  128-block  3
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:  128-block  4
+call   12 returned 1
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+        1:  128-block  5
+call   15 returned 1
+    $$$$$:  128-block  6
+call   16 never executed
+    $$$$$:  128-block  7
+        -:  129:
+        1:  130:}
+call    0 returned 1
+call    1 returned 1
+    $$$$$:  130-block  0
+call    2 never executed
+    $$$$$:  130-block  1
+call    3 never executed
+        -:  131:
+function main called 1 returned 100% blocks executed 100%
+        1:  132:int main() {
+        -:  133:
+        1:  134:    testComponent1();
+        1:  134-block  0
+call    0 returned 1
+        1:  135:    testComponent2();
+call    0 returned 1
+        1:  136:    testComponent3();
+call    0 returned 1
+        1:  137:    testComponent4();
+call    0 returned 1
+        1:  138:    return 0;
+        -:  139:}

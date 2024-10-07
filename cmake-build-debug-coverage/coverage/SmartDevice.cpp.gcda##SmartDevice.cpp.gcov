@@ -1,0 +1,46 @@
+        -:    0:Source:A:/Take/Prac_5/COS214_Prac5/SmartDevice.cpp
+        -:    0:Graph:A:\Take\Prac_5\COS214_Prac5\cmake-build-debug-coverage\CMakeFiles\COS214_Prac5.dir\SmartDevice.cpp.gcno
+        -:    0:Data:A:\Take\Prac_5\COS214_Prac5\cmake-build-debug-coverage\CMakeFiles\COS214_Prac5.dir\SmartDevice.cpp.gcda
+        -:    0:Runs:1
+        -:    1:
+        -:    2:
+        -:    3:#include "SmartDevice.h"
+        -:    4:// Provide a definition for the virtual destructor
+       9*:    5:SmartDevice::~SmartDevice() {
+        -:    6:    // No specific cleanup is needed here, but the definition is necessary.
+       9*:    7:}
+------------------
+_ZN11SmartDeviceD0Ev:
+function _ZN11SmartDeviceD0Ev called 0 returned 0% blocks executed 0%
+    #####:    5:SmartDevice::~SmartDevice() {
+        -:    6:    // No specific cleanup is needed here, but the definition is necessary.
+    #####:    7:}
+    %%%%%:    7-block  0
+call    0 never executed
+call    1 never executed
+------------------
+_ZN11SmartDeviceD2Ev:
+function _ZN11SmartDeviceD2Ev called 9 returned 100% blocks executed 100%
+        9:    5:SmartDevice::~SmartDevice() {
+        -:    6:    // No specific cleanup is needed here, but the definition is necessary.
+        9:    7:}
+        9:    7-block  0
+call    0 returned 9
+call    1 returned 9
+------------------
+function _ZN11SmartDevice6updateEv called 0 returned 0% blocks executed 0%
+    #####:    8:void SmartDevice::update() {
+    #####:    9:    std::cout << "SmartDevice update: Generic update action." << std::endl;
+    %%%%%:    9-block  0
+call    0 never executed
+call    1 never executed
+    #####:   10:}
+        -:   11:
+        -:   12:// Define the performAction method if it was not defined inline in the header
+function _ZN11SmartDevice13performActionERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE called 0 returned 0% blocks executed 0%
+    #####:   13:void SmartDevice::performAction(const std::string& action) {
+        -:   14:    // Implement the default behavior of performAction if needed
+    #####:   15:    status = action;
+    %%%%%:   15-block  0
+call    0 never executed
+    #####:   16:}

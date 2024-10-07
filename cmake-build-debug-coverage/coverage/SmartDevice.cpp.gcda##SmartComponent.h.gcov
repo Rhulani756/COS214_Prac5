@@ -1,0 +1,48 @@
+        -:    0:Source:A:/Take/Prac_5/COS214_Prac5/SmartComponent.h
+        -:    0:Graph:A:\Take\Prac_5\COS214_Prac5\cmake-build-debug-coverage\CMakeFiles\COS214_Prac5.dir\SmartDevice.cpp.gcno
+        -:    0:Data:A:\Take\Prac_5\COS214_Prac5\cmake-build-debug-coverage\CMakeFiles\COS214_Prac5.dir\SmartDevice.cpp.gcda
+        -:    0:Runs:1
+        -:    1:#ifndef SMARTCOMPONENT_H
+        -:    2:#define SMARTCOMPONENT_H
+        -:    3:#include <iostream>
+        -:    4:
+        -:    5:/**
+        -:    6: * @class SmartComponent
+        -:    7: * @brief An abstract base class for all smart components in the smart home system.
+        -:    8: *
+        -:    9: * The SmartComponent class defines the interface for smart devices or components
+        -:   10: * that can perform actions and report their status. All smart devices like
+        -:   11: * thermostats, lights, and door locks will inherit from this class.
+        -:   12: */
+        -:   13:class SmartComponent {
+        -:   14:public:
+        -:   15:    /**
+        -:   16:     * @brief Performs a specified action on the smart component.
+        -:   17:     *
+        -:   18:     * This pure virtual function must be implemented by derived classes.
+        -:   19:     * The action is typically a command like "ToggleOn" or "SetTemp".
+        -:   20:     *
+        -:   21:     * @param action The action or command to be performed.
+        -:   22:     */
+        -:   23:    virtual void performAction(const std::string& action) = 0;
+        -:   24:
+        -:   25:    /**
+        -:   26:     * @brief Retrieves the current status of the smart component.
+        -:   27:     *
+        -:   28:     * This pure virtual function must be implemented by derived classes.
+        -:   29:     * It returns a string representing the current state of the component.
+        -:   30:     *
+        -:   31:     * @return A string representing the status of the component.
+        -:   32:     */
+        -:   33:    virtual std::string getStatus() = 0;
+        -:   34:
+        -:   35:    /**
+        -:   36:     * @brief Virtual destructor.
+        -:   37:     *
+        -:   38:     * Ensures proper cleanup of derived classes when a SmartComponent object is destroyed.
+        -:   39:     */
+function _ZN14SmartComponentD2Ev called 0 returned 0% blocks executed 0%
+    #####:   40:    virtual ~SmartComponent() = default;
+        -:   41:};
+        -:   42:
+        -:   43:#endif //SMARTCOMPONENT_H
