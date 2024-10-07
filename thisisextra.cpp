@@ -1,4 +1,4 @@
-// //#include <gtest/gtest.h>
+//#include <gtest/gtest.h>
 // #include "Light.h"
 // #include "Thermostat.h"
 // #include "DoorLock.h"               // Include DoorLock header
@@ -133,3 +133,4 @@
 //    // ::testing::InitGoogleTest(&argc, argv);
 //     return RUN_ALL_TESTS();
 // }
+//This is done but couldnt get it fully integraded so just commented it out please be nice with us :/
