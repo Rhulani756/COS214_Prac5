@@ -13,7 +13,9 @@ void MotionSensor::detectMotion() {
 void MotionSensor::resetSensor() {
     motionDetected = false;
 }
-
+    bool MotionSensor::getmotion(){
+return motionDetected;
+    }
 void MotionSensor::notifyDevices() {
     for (SmartDevice* device : devices) {
         device->performAction("TurnOn");

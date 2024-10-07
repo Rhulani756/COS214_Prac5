@@ -13,6 +13,7 @@ public:
     MotionSensor();
     void detectMotion();
     void resetSensor();
+    bool getmotion();
     void notifyDevices() override;
 };
 
