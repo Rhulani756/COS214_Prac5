@@ -8,6 +8,7 @@
 #include <string>
 #include <vector>
 #include "SmartComponent.h"
+#include "Room.h"
 
 /**
  * @brief Represents a section of the smart home, which can consist of multiple rooms.
@@ -19,7 +20,7 @@
 class Section : public SmartComponent {
 private:
     std::string sectionName; /**< Name of the section (e.g., "Living Area", "Bedroom"). */
-    std::vector<SmartComponent*> rooms; /**< List of rooms (SmartComponents) in the section. */
+    std::vector<Room*> rooms; /**< List of rooms (SmartComponents) in the section. */
 
 public:
     /**
@@ -41,14 +42,14 @@ public:
      *
      * @param room Pointer to a SmartComponent representing the room to be added.
      */
-    void add(SmartComponent* room);
+    void add(Room* room);
 
     /**
      * @brief Removes a room (SmartComponent) from the section.
      *
      * @param room Pointer to a SmartComponent representing the room to be removed.
      */
-    void remove(SmartComponent* room);
+    void remove(Room* room);
 
     /**
      * @brief Perform a specified action on all rooms in the section.

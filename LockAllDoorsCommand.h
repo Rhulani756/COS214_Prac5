@@ -41,7 +41,9 @@ public:
      *
      * The destructor is defined but does not perform any specific actions.
      */
-    ~LockAllDoorsCommand() {}
+
+    virtual ~LockAllDoorsCommand() {}
+
 };
 
 #endif // PRAC_5_LOCKALLDOORSCOMMAND_H
