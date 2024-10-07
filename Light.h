@@ -5,6 +5,7 @@
 #ifndef LIGHT_H
 #define LIGHT_H
 #include "SmartDevice.h"
+#include "MotionSensor.h"
 
 /**
  * @class Light
@@ -14,6 +15,9 @@
  * specific to a light device, such as turning the light on/off and checking its status.
  */
 class Light : public SmartDevice {
+    private:
+    MotionSensor* motionSensor; // Pointer to a MotionSensor instance
+
 public:
     /**
      * @brief Default constructor for the Light class.
@@ -49,6 +53,7 @@ public:
      * @param action The action or command to be performed on the smart light.
      */
     void performAction(const std::string& action) override;
+    void update() override;
 };
 
 #endif //LIGHT_H

@@ -17,6 +17,7 @@ public:
     void performAction(const std::string& action) override;
     std::string getStatus() override;
     std::string getDeviceType() override;
+  
 };
 
 #endif

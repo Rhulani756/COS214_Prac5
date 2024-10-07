@@ -27,5 +27,12 @@ void DoorLock::performAction(const std::string& action) {
 std::string DoorLock::getDeviceType() {
     return "DoorLock";
 }
-
+void DoorLock::update() {
+    // Example logic for update: If the door is unlocked, it will automatically lock after update.
+    if (status == "unlocked") {
+        std::cout << "Warning: Door has been left unlocked. Auto-locking the door now." << std::endl;
+        status = "locked";
+    }
+    std::cout << "Current Door Status: " << status << std::endl;
+}
 

@@ -51,6 +51,7 @@ public:
      * @return A string representing the type of the device.
      */
     virtual std::string getDeviceType() = 0;
+    virtual void update();
     virtual ~SmartDevice() ;
 
 };

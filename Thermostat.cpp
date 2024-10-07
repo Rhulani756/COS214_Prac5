@@ -32,3 +32,21 @@ std::string Thermostat::getStatus() {
 std::string Thermostat::getDeviceType() {
     return "Thermostat";
 }
+void Thermostat::update() {
+    if (temperature < 22) { // If temperature is too low
+        if (status != "on") {
+            status = "on";
+            std::cout << "Thermostat: Temperature is too low (" << temperature << "°C). Turning ON to heat." << std::endl;
+        }
+    } else if (temperature > 32) { // If temperature is too high
+        if (status != "on") {
+            status = "on";
+            std::cout << "Thermostat: Temperature is too high (" << temperature << "°C). Turning ON to cool." << std::endl;
+        }
+    } else { // Temperature is within the comfortable range
+        if (status != "off") {
+            status = "off";
+            std::cout << "Thermostat: Temperature is comfortable (" << temperature << "°C). Turning OFF." << std::endl;
+        }
+    }
+}

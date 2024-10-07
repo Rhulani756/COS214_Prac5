@@ -53,6 +53,8 @@ public:
      * @return A string representing the device type.
      */
     std::string getDeviceType() override;
+
+    void update() override;
 };
 
 #endif //DOORLOCK_H

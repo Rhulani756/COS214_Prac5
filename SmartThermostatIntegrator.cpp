@@ -20,6 +20,7 @@ void SmartThermostatIntegrator::performAction(const std::string& action) {
     }
 }
 
+
 std::string SmartThermostatIntegrator::getStatus() {
     return "Temperature: " + std::to_string(getTemperature()) + "°C";
 }

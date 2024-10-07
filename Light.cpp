@@ -27,5 +27,12 @@ void Light::performAction(const std::string& action) {
     else
         std::cout << "Unknown command" << std::endl;
 }
-
-
+void Light::update() {
+    if (motionSensor && motionSensor->getmotion()) {
+        status = "on";
+        std::cout << "Light: Turning on due to detected motion." << std::endl;
+    } else {
+        status = "off";
+        std::cout << "Light: Turning off due to no motion detected." << std::endl;
+    }
+}
