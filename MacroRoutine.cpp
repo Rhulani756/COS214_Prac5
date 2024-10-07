@@ -1,11 +1,14 @@
 
 #include "MacroRoutine.h"
+#include <algorithm>
+
 void MacroRoutine::addProcedure(Command *command) {
     procedures.push_back(command);
 }
 
 void MacroRoutine::removeProcedure(Command *procedure) {
-    procedures.pop_back();
+    procedures.erase(std::remove(procedures.begin(), procedures.end(), procedure), procedures.end());
+
 }
 
 void MacroRoutine::execute() {

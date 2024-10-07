@@ -5,28 +5,15 @@
 #include <vector>
 #include "SmartDevice.h"
 
+// Abstract Subject class representing a sensor
 class Sensor {
 protected:
     std::vector<SmartDevice*> devices;
 
 public:
-    // Constructor
-    Sensor();
-
-    // Add a SmartDevice to the sensor
+    virtual ~Sensor() = default;
     void addDevice(SmartDevice* device);
-
-    // Remove a SmartDevice from the sensor
     void removeDevice(SmartDevice* device);
-
-    // Notify all devices (perform an action or update)
-    void notifyDevices();
-
-    // Virtual method for getting the status (to be overridden by derived classes)
-    virtual std::string getStatus();
-
-    // Destructor
-    virtual ~Sensor();
+    virtual void notifyDevices() = 0;
 };
-
 #endif //PRAC_5_SENSOR_H

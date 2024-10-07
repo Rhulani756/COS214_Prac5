@@ -4,6 +4,7 @@
 
 #include "Section.h"
 #include <iostream>
+#include <algorithm>
 
 Section::Section() : sectionName("Unnamed Section") {}
 
@@ -14,7 +15,8 @@ void Section::add(SmartComponent* room) {
 }
 
 void Section::remove(SmartComponent* room) {
-    rooms.pop_back();
+    rooms.erase(std::remove(rooms.begin(), rooms.end(), room), rooms.end());
+
 }
 
 void Section::performAction(const std::string& action) {
