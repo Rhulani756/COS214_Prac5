@@ -1,0 +1,148 @@
+\doxysection{Light Class Reference}
+\hypertarget{class_light}{}\label{class_light}\index{Light@{Light}}
+
+
+Represents a smart light device in the smart home system.  
+
+
+
+
+{\ttfamily \#include $<$Light.\+h$>$}
+
+Inheritance diagram for Light\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_light}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_light_aeb5df09a25a32f19fdffa761268ba24f}{Light}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor for the \doxylink{class_light}{Light} class. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_light_a47ed56c4855b6e5d936e97675a4fb094}{get\+Status}} () override
+\begin{DoxyCompactList}\small\item\em Retrieves the current status of the smart light. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_light_a5b234c850599669a908f4c46395bf804}{get\+Device\+Type}} () override
+\begin{DoxyCompactList}\small\item\em Retrieves the device type. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_light_af4693d90a3ba98a0d6980f817a9e3dd6}{perform\+Action}} (const std\+::string \&action) override
+\begin{DoxyCompactList}\small\item\em Performs a specified action on the smart light. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_light_a923c5625ec556ce1413b31a6ba84c28f}{update}} () override
+\begin{DoxyCompactList}\small\item\em Updates the state of the light. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_smart_device}{Smart\+Device}}}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_smart_device_adcb5b26e9edd4b5108f1a8d3aa763692}{perform\+Action}} (const std\+::string \&action) override
+\begin{DoxyCompactList}\small\item\em Performs a specified action on the smart device. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_smart_device_adf660b3efc39041ff216a1fe94d535b2}{\texorpdfstring{$\sim$}{\string~}\+Smart\+Device}} ()
+\begin{DoxyCompactList}\small\item\em Virtual destructor for the \doxylink{class_smart_device}{Smart\+Device} class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_smart_component}{Smart\+Component}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{class_smart_component_a19afd1a9dd9eb011141e1c923389e7dc}{\texorpdfstring{$\sim$}{\string~}\+Smart\+Component}} ()=default
+\begin{DoxyCompactList}\small\item\em Virtual destructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{class_smart_device}{Smart\+Device}}}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{class_smart_device_a063d4a9f87311ae33161559ce171a992}{status}}
+\begin{DoxyCompactList}\small\item\em The current status of the device. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents a smart light device in the smart home system. 
+
+The \doxylink{class_light}{Light} class extends the \doxylink{class_smart_device}{Smart\+Device} class and implements methods specific to a light device, such as turning the light on/off and checking its status. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_light_aeb5df09a25a32f19fdffa761268ba24f}\index{Light@{Light}!Light@{Light}}
+\index{Light@{Light}!Light@{Light}}
+\doxysubsubsection{\texorpdfstring{Light()}{Light()}}
+{\footnotesize\ttfamily \label{class_light_aeb5df09a25a32f19fdffa761268ba24f} 
+Light\+::\+Light (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Default constructor for the \doxylink{class_light}{Light} class. 
+
+Initializes a new smart light device with default settings. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_light_a5b234c850599669a908f4c46395bf804}\index{Light@{Light}!getDeviceType@{getDeviceType}}
+\index{getDeviceType@{getDeviceType}!Light@{Light}}
+\doxysubsubsection{\texorpdfstring{getDeviceType()}{getDeviceType()}}
+{\footnotesize\ttfamily \label{class_light_a5b234c850599669a908f4c46395bf804} 
+std\+::string Light\+::get\+Device\+Type (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Retrieves the device type. 
+
+This method returns the type of the device, which in this case is "{}\+Light"{}.
+
+\begin{DoxyReturn}{Returns}
+A string representing the device type. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_smart_device_ad052e7da2b5f47462de1f07fb7c709f5}{Smart\+Device}}.
+
+\Hypertarget{class_light_a47ed56c4855b6e5d936e97675a4fb094}\index{Light@{Light}!getStatus@{getStatus}}
+\index{getStatus@{getStatus}!Light@{Light}}
+\doxysubsubsection{\texorpdfstring{getStatus()}{getStatus()}}
+{\footnotesize\ttfamily \label{class_light_a47ed56c4855b6e5d936e97675a4fb094} 
+std\+::string Light\+::get\+Status (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Retrieves the current status of the smart light. 
+
+This method returns the current state of the light, such as whether it\textquotesingle{}s on or off.
+
+\begin{DoxyReturn}{Returns}
+A string representing the status of the light. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_smart_device_aef66acd7eb1ae4317d2af794af3fa796}{Smart\+Device}}.
+
+\Hypertarget{class_light_af4693d90a3ba98a0d6980f817a9e3dd6}\index{Light@{Light}!performAction@{performAction}}
+\index{performAction@{performAction}!Light@{Light}}
+\doxysubsubsection{\texorpdfstring{performAction()}{performAction()}}
+{\footnotesize\ttfamily \label{class_light_af4693d90a3ba98a0d6980f817a9e3dd6} 
+void Light\+::perform\+Action (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{action}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Performs a specified action on the smart light. 
+
+This method takes an action string (e.\+g., "{}\+Toggle\+On"{}, "{}\+Toggle\+Off"{}) and changes the state of the light based on the action.
+
+
+\begin{DoxyParams}{Parameters}
+{\em action} & The action or command to be performed on the smart light. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_smart_component_a8a946083983fb0697f51f8b7f5065d9d}{Smart\+Component}}.
+
+\Hypertarget{class_light_a923c5625ec556ce1413b31a6ba84c28f}\index{Light@{Light}!update@{update}}
+\index{update@{update}!Light@{Light}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily \label{class_light_a923c5625ec556ce1413b31a6ba84c28f} 
+void Light\+::update (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Updates the state of the light. 
+
+This method refreshes the internal state of the light, which could include checking the status of the motion sensor and adjusting the light\textquotesingle{}s state (on/off) accordingly, or implementing any scheduled tasks for the light. 
+
+Reimplemented from \mbox{\hyperlink{class_smart_device_aeb7d3db6551f012b203266ba81e138a6}{Smart\+Device}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Light.\+h\item 
+Light.\+cpp\end{DoxyCompactItemize}

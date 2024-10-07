@@ -1,0 +1,64 @@
+\doxysection{Command Class Reference}
+\hypertarget{class_command}{}\label{class_command}\index{Command@{Command}}
+
+
+Abstract base class for implementing the \doxylink{class_command}{Command} design pattern.  
+
+
+
+
+{\ttfamily \#include $<$Command.\+h$>$}
+
+Inheritance diagram for Command\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_command}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_command_a6fd7d9bd8df8bfc881e4d6c7cd1878b7}{execute}} ()=0
+\begin{DoxyCompactList}\small\item\em Pure virtual function to execute a command. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_command_a641c23ef533dd6f77d0a4ef0311598b2}{\texorpdfstring{$\sim$}{\string~}\+Command}} ()
+\begin{DoxyCompactList}\small\item\em Virtual destructor for the \doxylink{class_command}{Command} class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Abstract base class for implementing the \doxylink{class_command}{Command} design pattern. 
+
+The \doxylink{class_command}{Command} class defines an interface for executing operations. It includes a pure virtual function {\ttfamily \doxylink{class_command_a6fd7d9bd8df8bfc881e4d6c7cd1878b7}{execute()}} that must be implemented by derived classes. This allows for encapsulating actions and their execution, enabling features such as undo/redo functionality or queuing commands. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_command_a641c23ef533dd6f77d0a4ef0311598b2}\index{Command@{Command}!````~Command@{\texorpdfstring{$\sim$}{\string~}Command}}
+\index{````~Command@{\texorpdfstring{$\sim$}{\string~}Command}!Command@{Command}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Command()}{\string~Command()}}
+{\footnotesize\ttfamily \label{class_command_a641c23ef533dd6f77d0a4ef0311598b2} 
+virtual Command\+::\texorpdfstring{$\sim$}{\string~}\+Command (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Virtual destructor for the \doxylink{class_command}{Command} class. 
+
+The destructor is virtual to ensure proper cleanup of derived classes when an object is deleted through a base class pointer. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_command_a6fd7d9bd8df8bfc881e4d6c7cd1878b7}\index{Command@{Command}!execute@{execute}}
+\index{execute@{execute}!Command@{Command}}
+\doxysubsubsection{\texorpdfstring{execute()}{execute()}}
+{\footnotesize\ttfamily \label{class_command_a6fd7d9bd8df8bfc881e4d6c7cd1878b7} 
+virtual void Command\+::execute (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Pure virtual function to execute a command. 
+
+This function must be overridden in derived classes to provide the specific implementation for the command\textquotesingle{}s execution. 
+
+Implemented in \mbox{\hyperlink{class_lock_all_doors_command_a9a1594df666c0d74557b64178b3ad66e}{Lock\+All\+Doors\+Command}}, \mbox{\hyperlink{class_set_temperature_command_a066d2743cf6454d93191356bc147dc12}{Set\+Temperature\+Command}}, and \mbox{\hyperlink{class_turn_off_all_lights_command_ae9fe440102f97088cb4f457498cba717}{Turn\+Off\+All\+Lights\+Command}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Command.\+h\end{DoxyCompactItemize}

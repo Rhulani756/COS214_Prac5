@@ -14,3 +14,6 @@ void SmartDevice::performAction(const std::string& action) {
     // Implement the default behavior of performAction if needed
     status = action;
 }
+virtual ~SmartDevice() {
+        // Cleanup code if necessary
+    }

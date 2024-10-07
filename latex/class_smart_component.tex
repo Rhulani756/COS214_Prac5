@@ -1,0 +1,92 @@
+\doxysection{Smart\+Component Class Reference}
+\hypertarget{class_smart_component}{}\label{class_smart_component}\index{SmartComponent@{SmartComponent}}
+
+
+An abstract base class for all smart components in the smart home system.  
+
+
+
+
+{\ttfamily \#include $<$Smart\+Component.\+h$>$}
+
+Inheritance diagram for Smart\+Component\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.011976cm]{class_smart_component}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_smart_component_a8a946083983fb0697f51f8b7f5065d9d}{perform\+Action}} (const std\+::string \&action)=0
+\begin{DoxyCompactList}\small\item\em Performs a specified action on the smart component. \end{DoxyCompactList}\item 
+virtual std\+::string \mbox{\hyperlink{class_smart_component_acb760151b7f57aa520c6929646985c5d}{get\+Status}} ()=0
+\begin{DoxyCompactList}\small\item\em Retrieves the current status of the smart component. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_smart_component_a19afd1a9dd9eb011141e1c923389e7dc}{\texorpdfstring{$\sim$}{\string~}\+Smart\+Component}} ()=default
+\begin{DoxyCompactList}\small\item\em Virtual destructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+An abstract base class for all smart components in the smart home system. 
+
+The \doxylink{class_smart_component}{Smart\+Component} class defines the interface for smart devices or components that can perform actions and report their status. All smart devices like thermostats, lights, and door locks will inherit from this class. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_smart_component_a19afd1a9dd9eb011141e1c923389e7dc}\index{SmartComponent@{SmartComponent}!````~SmartComponent@{\texorpdfstring{$\sim$}{\string~}SmartComponent}}
+\index{````~SmartComponent@{\texorpdfstring{$\sim$}{\string~}SmartComponent}!SmartComponent@{SmartComponent}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}SmartComponent()}{\string~SmartComponent()}}
+{\footnotesize\ttfamily \label{class_smart_component_a19afd1a9dd9eb011141e1c923389e7dc} 
+virtual Smart\+Component\+::\texorpdfstring{$\sim$}{\string~}\+Smart\+Component (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+
+
+Virtual destructor. 
+
+Ensures proper cleanup of derived classes when a \doxylink{class_smart_component}{Smart\+Component} object is destroyed. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_smart_component_acb760151b7f57aa520c6929646985c5d}\index{SmartComponent@{SmartComponent}!getStatus@{getStatus}}
+\index{getStatus@{getStatus}!SmartComponent@{SmartComponent}}
+\doxysubsubsection{\texorpdfstring{getStatus()}{getStatus()}}
+{\footnotesize\ttfamily \label{class_smart_component_acb760151b7f57aa520c6929646985c5d} 
+virtual std\+::string Smart\+Component\+::get\+Status (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Retrieves the current status of the smart component. 
+
+This pure virtual function must be implemented by derived classes. It returns a string representing the current state of the component.
+
+\begin{DoxyReturn}{Returns}
+A string representing the status of the component. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_door_lock_a608595fb66f91251bd4cfd46cc8203d1}{Door\+Lock}}, \mbox{\hyperlink{class_light_a47ed56c4855b6e5d936e97675a4fb094}{Light}}, \mbox{\hyperlink{class_room_a253761d7449a7532bc2368b4fb67ea76}{Room}}, \mbox{\hyperlink{class_section_af034ec32ecd1b3467d5161ab4b2b983b}{Section}}, \mbox{\hyperlink{class_smart_device_aef66acd7eb1ae4317d2af794af3fa796}{Smart\+Device}}, \mbox{\hyperlink{class_smart_thermostat_integrator_af4e977ca88815f134a593147f8763fec}{Smart\+Thermostat\+Integrator}}, and \mbox{\hyperlink{class_thermostat_afef18dd40a9f541157ee723585296bb7}{Thermostat}}.
+
+\Hypertarget{class_smart_component_a8a946083983fb0697f51f8b7f5065d9d}\index{SmartComponent@{SmartComponent}!performAction@{performAction}}
+\index{performAction@{performAction}!SmartComponent@{SmartComponent}}
+\doxysubsubsection{\texorpdfstring{performAction()}{performAction()}}
+{\footnotesize\ttfamily \label{class_smart_component_a8a946083983fb0697f51f8b7f5065d9d} 
+virtual void Smart\+Component\+::perform\+Action (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{action}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Performs a specified action on the smart component. 
+
+This pure virtual function must be implemented by derived classes. The action is typically a command like "{}\+Toggle\+On"{} or "{}\+Set\+Temp"{}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em action} & The action or command to be performed. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_door_lock_a6e705299fe859a4d35f824bb16f23a0e}{Door\+Lock}}, \mbox{\hyperlink{class_light_af4693d90a3ba98a0d6980f817a9e3dd6}{Light}}, \mbox{\hyperlink{class_room_abaa2c5f450f1cb9a7bfce3fe8aa63c82}{Room}}, \mbox{\hyperlink{class_section_a36515f434481cf91103361c4c9d5f029}{Section}}, \mbox{\hyperlink{class_smart_device_adcb5b26e9edd4b5108f1a8d3aa763692}{Smart\+Device}}, \mbox{\hyperlink{class_smart_thermostat_integrator_a7486f146305ff6370879d8339ccc03cc}{Smart\+Thermostat\+Integrator}}, and \mbox{\hyperlink{class_thermostat_a216f08f8efeaecda81ac9e3a0191365c}{Thermostat}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Smart\+Component.\+h\end{DoxyCompactItemize}

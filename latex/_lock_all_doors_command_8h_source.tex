@@ -1,0 +1,26 @@
+\doxysection{Lock\+All\+Doors\+Command.\+h}
+\hypertarget{_lock_all_doors_command_8h_source}{}\label{_lock_all_doors_command_8h_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ PRAC\_5\_LOCKALLDOORSCOMMAND\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ PRAC\_5\_LOCKALLDOORSCOMMAND\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}Command.h"{}}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}Room.h"{}}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00016\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_lock_all_doors_command}{LockAllDoorsCommand}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_command}{Command}}\ \{}
+\DoxyCodeLine{00017\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00018\ \ \ \ \ \mbox{\hyperlink{class_room}{Room}}*\ room;\ }
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00026\ \ \ \ \ \mbox{\hyperlink{class_lock_all_doors_command_ac1d082f34b7fbd70cd72445d4a03af1d}{LockAllDoorsCommand}}(\mbox{\hyperlink{class_room}{Room}}*\ room)\ :\ room(room)\ \{\}}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_lock_all_doors_command_a9a1594df666c0d74557b64178b3ad66e}{execute}}()\textcolor{keyword}{\ override\ }\{}
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ room-\/>\mbox{\hyperlink{class_room_abaa2c5f450f1cb9a7bfce3fe8aa63c82}{performAction}}(\textcolor{stringliteral}{"{}Lock"{}});}
+\DoxyCodeLine{00037\ \ \ \ \ \}}
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00044\ \ \ \ \ \mbox{\hyperlink{class_lock_all_doors_command_ac8a808496d1da7ffb6f450f76a57d3c6}{\string~LockAllDoorsCommand}}()\ \{\}}
+\DoxyCodeLine{00045\ \};}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00047\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ PRAC\_5\_LOCKALLDOORSCOMMAND\_H}}
+
+\end{DoxyCode}

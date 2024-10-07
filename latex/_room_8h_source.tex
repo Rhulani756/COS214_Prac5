@@ -1,0 +1,40 @@
+\doxysection{Room.\+h}
+\hypertarget{_room_8h_source}{}\label{_room_8h_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{//}}
+\DoxyCodeLine{00002\ \textcolor{comment}{//\ Created\ by\ rhula\ on\ 9/25/2024.}}
+\DoxyCodeLine{00003\ \textcolor{comment}{//}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#ifndef\ ROOM\_H}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#define\ ROOM\_H}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}SmartComponent.h"{}}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00018\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_room}{Room}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_smart_component}{SmartComponent}}\ \{}
+\DoxyCodeLine{00019\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00021\ \ \ \ \ std::string\ roomName;}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00024\ \ \ \ \ std::vector<SmartComponent*>\ devices;}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00030\ \ \ \ \ \mbox{\hyperlink{class_room_ac6ef93a7d9c3e1d624e025058d5f16ff}{Room}}();}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00037\ \ \ \ \ \mbox{\hyperlink{class_room_ac6ef93a7d9c3e1d624e025058d5f16ff}{Room}}(std::string\&\ roomName);}
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00044\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_room_a1a1a0264bc51fb2ec8bc40b9a7224a6f}{add}}(\mbox{\hyperlink{class_smart_component}{SmartComponent}}*\ device);}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00051\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_room_a80fe48ac622b00dc55b00475c7f9f8c8}{remove}}(\mbox{\hyperlink{class_smart_component}{SmartComponent}}*\ device);}
+\DoxyCodeLine{00052\ }
+\DoxyCodeLine{00058\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_room_abaa2c5f450f1cb9a7bfce3fe8aa63c82}{performAction}}(\textcolor{keyword}{const}\ std::string\&\ action)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00059\ }
+\DoxyCodeLine{00067\ \ \ \ \ std::string\ \mbox{\hyperlink{class_room_a253761d7449a7532bc2368b4fb67ea76}{getStatus}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00068\ }
+\DoxyCodeLine{00072\ \ \ \ \ \mbox{\hyperlink{class_room_a6230f8d06c635a428472015cfb31f12d}{\string~Room}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00073\ \};}
+\DoxyCodeLine{00074\ }
+\DoxyCodeLine{00075\ }
+\DoxyCodeLine{00076\ }
+\DoxyCodeLine{00077\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//ROOM\_H}}
+
+\end{DoxyCode}

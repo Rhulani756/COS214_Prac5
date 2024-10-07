@@ -61,6 +61,9 @@ public:
      * (on/off) accordingly, or implementing any scheduled tasks for the light.
      */
     void update() override;
+     virtual ~Light() override {
+        // Any specific cleanup for Light
+    }
 };
 
 #endif //LIGHT_H
