@@ -1,0 +1,26 @@
+        -:    0:Source:A:/Take/Prac_5/COS214_Prac5/Sensor.h
+        -:    0:Graph:A:\Take\Prac_5\COS214_Prac5\cmake-build-debug-coverage\CMakeFiles\COS214_Prac5.dir\MotionSensor.cpp.gcno
+        -:    0:Data:A:\Take\Prac_5\COS214_Prac5\cmake-build-debug-coverage\CMakeFiles\COS214_Prac5.dir\MotionSensor.cpp.gcda
+        -:    0:Runs:1
+        -:    1:
+        -:    2:#ifndef PRAC_5_SENSOR_H
+        -:    3:#define PRAC_5_SENSOR_H
+        -:    4:
+        -:    5:#include <vector>
+        -:    6:#include "SmartDevice.h"
+        -:    7:
+        -:    8:// Abstract Subject class representing a sensor
+        -:    9:class Sensor {
+        -:   10:protected:
+        -:   11:    std::vector<SmartDevice*> devices;
+        -:   12:
+        -:   13:public:
+function _ZN6SensorD2Ev called 0 returned 0% blocks executed 0%
+    #####:   14:    virtual ~Sensor() = default;
+    %%%%%:   14-block  0
+call    0 never executed
+        -:   15:    void addDevice(SmartDevice* device);
+        -:   16:    void removeDevice(SmartDevice* device);
+        -:   17:    virtual void notifyDevices() = 0;
+        -:   18:};
+        -:   19:#endif //PRAC_5_SENSOR_H

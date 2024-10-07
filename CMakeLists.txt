@@ -1,12 +1,12 @@
 
 cmake_minimum_required(VERSION 3.27)
-project(Prac_5)
+project(COS214_Prac5)
 
 set(CMAKE_CXX_STANDARD 14)
 
 include_directories(.)
 
-add_executable(Prac_5
+add_executable(COS214_Prac5
         Command.cpp
         Command.h
         DoorLock.cpp

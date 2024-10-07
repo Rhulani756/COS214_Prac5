@@ -1,0 +1,20 @@
+        -:    0:Source:A:/Take/Prac_5/COS214_Prac5/LegacyThermostat.cpp
+        -:    0:Graph:A:\Take\Prac_5\COS214_Prac5\cmake-build-debug-coverage\CMakeFiles\COS214_Prac5.dir\LegacyThermostat.cpp.gcno
+        -:    0:Data:A:\Take\Prac_5\COS214_Prac5\cmake-build-debug-coverage\CMakeFiles\COS214_Prac5.dir\LegacyThermostat.cpp.gcda
+        -:    0:Runs:1
+        -:    1:
+        -:    2:#include "LegacyThermostat.h"
+        -:    3:
+function _ZN16LegacyThermostatC2Ev called 1 returned 100% blocks executed 100%
+        1:    4:LegacyThermostat::LegacyThermostat() : legacyTemperature(20) {} // Default to 20 degrees
+        -:    5:
+function _ZN16LegacyThermostat20setLegacyTemperatureEi called 1 returned 100% blocks executed 100%
+        1:    6:void LegacyThermostat::setLegacyTemperature(int temp) {
+        1:    7:    legacyTemperature = temp;
+        1:    8:}
+        -:    9:
+function _ZNK16LegacyThermostat20getLegacyTemperatureEv called 1 returned 100% blocks executed 100%
+        1:   10:int LegacyThermostat::getLegacyTemperature() const {
+        1:   11:    return legacyTemperature;
+        1:   11-block  0
+        -:   12:}

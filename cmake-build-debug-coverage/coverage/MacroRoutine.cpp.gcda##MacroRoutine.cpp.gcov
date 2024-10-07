@@ -1,0 +1,85 @@
+        -:    0:Source:A:/Take/Prac_5/COS214_Prac5/MacroRoutine.cpp
+        -:    0:Graph:A:\Take\Prac_5\COS214_Prac5\cmake-build-debug-coverage\CMakeFiles\COS214_Prac5.dir\MacroRoutine.cpp.gcno
+        -:    0:Data:A:\Take\Prac_5\COS214_Prac5\cmake-build-debug-coverage\CMakeFiles\COS214_Prac5.dir\MacroRoutine.cpp.gcda
+        -:    0:Runs:1
+        -:    1:
+        -:    2:#include "MacroRoutine.h"
+        -:    3:#include <algorithm>
+        -:    4:
+function _ZN12MacroRoutine12addProcedureEP7Command called 3 returned 100% blocks executed 100%
+        3:    5:void MacroRoutine::addProcedure(Command *command) {
+        3:    6:    procedures.push_back(command);
+        3:    6-block  0
+call    0 returned 3
+        3:    7:}
+        -:    8:
+function _ZN12MacroRoutine15removeProcedureEP7Command called 0 returned 0% blocks executed 0%
+    #####:    9:void MacroRoutine::removeProcedure(Command *procedure) {
+    #####:   10:    procedures.erase(std::remove(procedures.begin(), procedures.end(), procedure), procedures.end());
+    %%%%%:   10-block  0
+call    0 never executed
+call    1 never executed
+call    2 never executed
+call    3 never executed
+call    4 never executed
+branch  5 never executed (fallthrough)
+branch  6 never executed (throw)
+    %%%%%:   10-block  1
+call    7 never executed
+call    8 never executed
+branch  9 never executed (fallthrough)
+branch 10 never executed (throw)
+    $$$$$:   10-block  2
+    $$$$$:   10-block  3
+    $$$$$:   10-block  4
+        -:   11:
+    #####:   12:}
+    %%%%%:   12-block  0
+        -:   13:
+function _ZN12MacroRoutine7executeEv called 1 returned 100% blocks executed 100%
+        1:   14:void MacroRoutine::execute() {
+        4:   15:    for (Command* command : procedures) {
+        1:   15-block  0
+call    0 returned 1
+call    1 returned 1
+        3:   15-block  1
+call    2 returned 3
+        3:   15-block  2
+call    3 returned 3
+        4:   15-block  3
+call    4 returned 4
+branch  5 taken 3
+branch  6 taken 1 (fallthrough)
+        3:   16:        command->execute();  // Execute each command
+call    0 returned 3
+branch  1 taken 3 (fallthrough)
+branch  2 taken 0 (throw)
+        -:   17:    }
+        1:   18:}
+        1:   18-block  0
+        -:   19:
+function _ZN12MacroRoutineD2Ev called 1 returned 100% blocks executed 100%
+        1:   20:MacroRoutine::~MacroRoutine() {
+        4:   21:    for (Command* command : procedures) {
+        1:   21-block  0
+call    0 returned 1
+call    1 returned 1
+        3:   21-block  1
+call    2 returned 3
+        3:   21-block  2
+call    3 returned 3
+        4:   21-block  3
+call    4 returned 4
+branch  5 taken 3
+branch  6 taken 1 (fallthrough)
+        3:   22:        delete command;
+branch  0 taken 3 (fallthrough)
+branch  1 taken 0
+        3:   22-block  0
+call    2 returned 3
+        -:   23:    }
+        1:   24:}
+        1:   24-block  0
+call    0 returned 1
+        -:   25:
+        -:   26:

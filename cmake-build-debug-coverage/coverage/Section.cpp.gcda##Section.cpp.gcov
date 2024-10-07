@@ -1,0 +1,189 @@
+        -:    0:Source:A:/Take/Prac_5/COS214_Prac5/Section.cpp
+        -:    0:Graph:A:\Take\Prac_5\COS214_Prac5\cmake-build-debug-coverage\CMakeFiles\COS214_Prac5.dir\Section.cpp.gcno
+        -:    0:Data:A:\Take\Prac_5\COS214_Prac5\cmake-build-debug-coverage\CMakeFiles\COS214_Prac5.dir\Section.cpp.gcda
+        -:    0:Runs:1
+        -:    1://
+        -:    2:// Created by henru on 2024/10/06.
+        -:    3://
+        -:    4:
+        -:    5:#include "Section.h"
+        -:    6:#include <iostream>
+        -:    7:#include <algorithm>
+        -:    8:
+function _ZN7SectionC2Ev called 0 returned 0% blocks executed 0%
+    #####:    9:Section::Section() : sectionName("Unnamed Section") {}
+    %%%%%:    9-block  0
+call    0 never executed
+    %%%%%:    9-block  1
+call    1 never executed
+branch  2 never executed (fallthrough)
+branch  3 never executed (throw)
+call    4 never executed
+    $$$$$:    9-block  2
+    $$$$$:    9-block  3
+call    5 never executed
+        -:   10:
+function _ZN7SectionC2ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE called 0 returned 0% blocks executed 0%
+    #####:   11:Section::Section(const std::string& name) : sectionName(name) {}
+    %%%%%:   11-block  0
+call    0 never executed
+call    1 never executed
+branch  2 never executed (fallthrough)
+branch  3 never executed (throw)
+    %%%%%:   11-block  1
+call    4 never executed
+    $$$$$:   11-block  2
+call    5 never executed
+        -:   12:
+function _ZN7Section3addEP14SmartComponent called 0 returned 0% blocks executed 0%
+    #####:   13:void Section::add(SmartComponent* room) {
+    #####:   14:    rooms.push_back(room);
+    %%%%%:   14-block  0
+call    0 never executed
+    #####:   15:}
+        -:   16:
+function _ZN7Section6removeEP14SmartComponent called 0 returned 0% blocks executed 0%
+    #####:   17:void Section::remove(SmartComponent* room) {
+    #####:   18:    rooms.erase(std::remove(rooms.begin(), rooms.end(), room), rooms.end());
+    %%%%%:   18-block  0
+call    0 never executed
+call    1 never executed
+call    2 never executed
+call    3 never executed
+call    4 never executed
+branch  5 never executed (fallthrough)
+branch  6 never executed (throw)
+    %%%%%:   18-block  1
+call    7 never executed
+call    8 never executed
+branch  9 never executed (fallthrough)
+branch 10 never executed (throw)
+    $$$$$:   18-block  2
+    $$$$$:   18-block  3
+    $$$$$:   18-block  4
+        -:   19:
+    #####:   20:}
+    %%%%%:   20-block  0
+        -:   21:
+function _ZN7Section13performActionERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE called 0 returned 0% blocks executed 0%
+    #####:   22:void Section::performAction(const std::string& action) {
+    #####:   23:    for (SmartComponent* room : rooms) {
+    %%%%%:   23-block  0
+call    0 never executed
+call    1 never executed
+    %%%%%:   23-block  1
+call    2 never executed
+    %%%%%:   23-block  2
+call    3 never executed
+    %%%%%:   23-block  3
+call    4 never executed
+branch  5 never executed
+branch  6 never executed (fallthrough)
+    #####:   24:        room->performAction(action);
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+        -:   25:    }
+    #####:   26:}
+    %%%%%:   26-block  0
+        -:   27:
+function _ZN7Section9getStatusB5cxx11Ev called 0 returned 0% blocks executed 0%
+    #####:   28:std::string Section::getStatus() {
+    #####:   29:    std::string status = "Section " + sectionName + " contains:\n";
+    %%%%%:   29-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    %%%%%:   29-block  1
+call    3 never executed
+branch  4 never executed (fallthrough)
+branch  5 never executed (throw)
+    %%%%%:   29-block  2
+call    6 never executed
+    $$$$$:   29-block  3
+call    7 never executed
+    $$$$$:   29-block  4
+call    8 never executed
+    #####:   30:    for (SmartComponent* room : rooms) {
+call    0 never executed
+call    1 never executed
+    %%%%%:   30-block  0
+call    2 never executed
+    %%%%%:   30-block  1
+call    3 never executed
+branch  4 never executed
+branch  5 never executed (fallthrough)
+    #####:   31:        status += room->getStatus() + "\n";
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed (throw)
+    %%%%%:   31-block  0
+call    3 never executed
+branch  4 never executed (fallthrough)
+branch  5 never executed (throw)
+    %%%%%:   31-block  1
+call    6 never executed
+branch  7 never executed (fallthrough)
+branch  8 never executed (throw)
+    %%%%%:   31-block  2
+call    9 never executed
+call   10 never executed
+call   11 never executed
+    $$$$$:   31-block  3
+call   12 never executed
+    $$$$$:   31-block  4
+call   13 never executed
+    $$$$$:   31-block  5
+    $$$$$:   31-block  6
+        -:   32:    }
+    #####:   33:    return status;
+    %%%%%:   33-block  0
+    %%%%%:   33-block  1
+    =====:   34:}
+    $$$$$:   34-block  0
+call    0 never executed
+        -:   35:
+    #####:   36:Section::~Section() {
+    #####:   37:    for (SmartComponent* room : rooms) {
+    #####:   38:        delete room;
+        -:   39:    }
+    #####:   40:}
+------------------
+_ZN7SectionD0Ev:
+function _ZN7SectionD0Ev called 0 returned 0% blocks executed 0%
+    #####:   36:Section::~Section() {
+        -:   37:    for (SmartComponent* room : rooms) {
+        -:   38:        delete room;
+        -:   39:    }
+    #####:   40:}
+    %%%%%:   40-block  0
+call    0 never executed
+call    1 never executed
+------------------
+_ZN7SectionD2Ev:
+function _ZN7SectionD2Ev called 0 returned 0% blocks executed 0%
+    #####:   36:Section::~Section() {
+    #####:   37:    for (SmartComponent* room : rooms) {
+    %%%%%:   37-block  0
+call    0 never executed
+call    1 never executed
+    %%%%%:   37-block  1
+call    2 never executed
+    %%%%%:   37-block  2
+call    3 never executed
+    %%%%%:   37-block  3
+call    4 never executed
+branch  5 never executed
+branch  6 never executed (fallthrough)
+    #####:   38:        delete room;
+branch  0 never executed (fallthrough)
+branch  1 never executed
+    %%%%%:   38-block  0
+call    2 never executed
+        -:   39:    }
+    #####:   40:}
+    %%%%%:   40-block  0
+call    0 never executed
+call    1 never executed
+call    2 never executed
+------------------

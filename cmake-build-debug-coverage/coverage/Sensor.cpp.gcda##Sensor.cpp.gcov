@@ -1,0 +1,35 @@
+        -:    0:Source:A:/Take/Prac_5/COS214_Prac5/Sensor.cpp
+        -:    0:Graph:A:\Take\Prac_5\COS214_Prac5\cmake-build-debug-coverage\CMakeFiles\COS214_Prac5.dir\Sensor.cpp.gcno
+        -:    0:Data:A:\Take\Prac_5\COS214_Prac5\cmake-build-debug-coverage\CMakeFiles\COS214_Prac5.dir\Sensor.cpp.gcda
+        -:    0:Runs:1
+        -:    1:#include "Sensor.h"
+        -:    2:#include <algorithm>
+        -:    3:
+function _ZN6Sensor9addDeviceEP11SmartDevice called 2 returned 100% blocks executed 100%
+        2:    4:void Sensor::addDevice(SmartDevice* device) {
+        2:    5:    devices.push_back(device);
+        2:    5-block  0
+call    0 returned 2
+        2:    6:}
+        -:    7:
+function _ZN6Sensor12removeDeviceEP11SmartDevice called 0 returned 0% blocks executed 0%
+    #####:    8:void Sensor::removeDevice(SmartDevice* device) {
+    #####:    9:    devices.erase(std::remove(devices.begin(), devices.end(), device), devices.end());
+    %%%%%:    9-block  0
+call    0 never executed
+call    1 never executed
+call    2 never executed
+call    3 never executed
+call    4 never executed
+branch  5 never executed (fallthrough)
+branch  6 never executed (throw)
+    %%%%%:    9-block  1
+call    7 never executed
+call    8 never executed
+branch  9 never executed (fallthrough)
+branch 10 never executed (throw)
+    $$$$$:    9-block  2
+    $$$$$:    9-block  3
+    $$$$$:    9-block  4
+    #####:   10:}
+    %%%%%:   10-block  0

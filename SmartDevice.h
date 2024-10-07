@@ -51,7 +51,23 @@ public:
      * @return A string representing the type of the device.
      */
     virtual std::string getDeviceType() = 0;
-    virtual void update();
+
+    /**
+     * @brief Updates the state of the smart device.
+     *
+     * This method can be overridden in derived classes to refresh the device's internal state.
+     * It could include checks for status changes or adjustments based on external factors.
+     */
+    
+        virtual void update();
+
+     /**
+     * @brief Virtual destructor for the SmartDevice class.
+     *
+     * The destructor is virtual to ensure proper cleanup of derived classes when an object is
+     * deleted through a base class pointer.
+     */
+
     virtual ~SmartDevice() ;
 
 };

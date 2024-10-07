@@ -53,6 +53,13 @@ public:
      * @param action The action or command to be performed on the smart light.
      */
     void performAction(const std::string& action) override;
+    /**
+     * @brief Updates the state of the light.
+     *
+     * This method refreshes the internal state of the light, which could include
+     * checking the status of the motion sensor and adjusting the light's state
+     * (on/off) accordingly, or implementing any scheduled tasks for the light.
+     */
     void update() override;
 };
 

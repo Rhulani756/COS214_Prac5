@@ -1,0 +1,95 @@
+        -:    0:Source:A:/Take/Prac_5/COS214_Prac5/DoorLock.cpp
+        -:    0:Graph:A:\Take\Prac_5\COS214_Prac5\cmake-build-debug-coverage\CMakeFiles\COS214_Prac5.dir\DoorLock.cpp.gcno
+        -:    0:Data:A:\Take\Prac_5\COS214_Prac5\cmake-build-debug-coverage\CMakeFiles\COS214_Prac5.dir\DoorLock.cpp.gcda
+        -:    0:Runs:1
+        -:    1://
+        -:    2:// Created by rhula on 9/25/2024.
+        -:    3://
+        -:    4:
+        -:    5:#include "DoorLock.h"
+        -:    6:
+function _ZN8DoorLockC2Ev called 2 returned 100% blocks executed 80%
+        2:    7:DoorLock::DoorLock() {
+        2:    7-block  0
+call    0 returned 2
+        2:    8:    status = "unlocked";
+call    0 returned 2
+branch  1 taken 2 (fallthrough)
+branch  2 taken 0 (throw)
+        2:    9:}
+        2:    9-block  0
+    $$$$$:    9-block  1
+call    0 never executed
+        -:   10:
+function _ZN8DoorLock9getStatusB5cxx11Ev called 1 returned 100% blocks executed 100%
+        1:   11:std::string DoorLock::getStatus() {
+        1:   12:    return status;
+        1:   12-block  0
+call    0 returned 1
+        -:   13:}
+        -:   14:
+function _ZN8DoorLock13performActionERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE called 11 returned 100% blocks executed 100%
+       11:   15:void DoorLock::performAction(const std::string& action) {
+       11:   16:    if (action == "Lock") {
+       11:   16-block  0
+call    0 returned 11
+branch  1 taken 3 (fallthrough)
+branch  2 taken 8
+        3:   17:        status = "locked";
+        3:   17-block  0
+call    0 returned 3
+        3:   18:        std::cout << "Door is now LOCKED" << std::endl;
+call    0 returned 3
+call    1 returned 3
+        8:   19:    } else if (action == "Unlock") {
+        8:   19-block  0
+call    0 returned 8
+branch  1 taken 1 (fallthrough)
+branch  2 taken 7
+        1:   20:        status = "unlocked";
+        1:   20-block  0
+call    0 returned 1
+        1:   21:        std::cout << "Door is now UNLOCKED" << std::endl;
+call    0 returned 1
+call    1 returned 1
+        -:   22:    }
+        -:   23:    else
+        7:   24:        std::cout << action << " is not a valid action" << std::endl;
+        7:   24-block  0
+call    0 returned 7
+call    1 returned 7
+call    2 returned 7
+       11:   25:}
+        -:   26:
+function _ZN8DoorLock13getDeviceTypeB5cxx11Ev called 1 returned 100% blocks executed 78%
+        1:   27:std::string DoorLock::getDeviceType() {
+        1:   27-block  0
+        2:   28:    return "DoorLock";
+        1:   28-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   28-block  1
+        -:   29:}
+function _ZN8DoorLock6updateEv called 0 returned 0% blocks executed 0%
+    #####:   30:void DoorLock::update() {
+        -:   31:    // Example logic for update: If the door is unlocked, it will automatically lock after update.
+    #####:   32:    if (status == "unlocked") {
+    %%%%%:   32-block  0
+call    0 never executed
+branch  1 never executed (fallthrough)
+branch  2 never executed
+    #####:   33:        std::cout << "Warning: Door has been left unlocked. Auto-locking the door now." << std::endl;
+    %%%%%:   33-block  0
+call    0 never executed
+call    1 never executed
+    #####:   34:        status = "locked";
+call    0 never executed
+        -:   35:    }
+    #####:   36:    std::cout << "Current Door Status: " << status << std::endl;
+    %%%%%:   36-block  0
+call    0 never executed
+call    1 never executed
+call    2 never executed
+    #####:   37:}
+        -:   38:

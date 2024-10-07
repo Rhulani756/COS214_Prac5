@@ -104,11 +104,74 @@ void testComponent3() {
 
     // Clean up allocated memory
 }
+void testComponent4(){
+    MotionSensor hallwaySensor;
+
+    // Create a Light instance linked to the MotionSensor
+    Light hallwayLight;
+
+    // Link the Light to the MotionSensor for notifications
+    hallwaySensor.addDevice(&hallwayLight);
+
+    // Test Case 1: Simulate motion detection
+    std::cout << "Test Case 1: Motion detected." << std::endl;
+    hallwaySensor.detectMotion();  // Simulates motion
+    hallwaySensor.notifyDevices(); // Notifies all connected devices
+    hallwayLight.update();         // Should turn on the light
+    std::cout << "Current Light Status: " << hallwayLight.getStatus() << "\n" << std::endl;
+
+    // Test Case 2: Simulate no motion (reset)
+    std::cout << "Test Case 2: No motion detected." << std::endl;
+    hallwaySensor.resetSensor();   // Resets motion sensor
+    hallwaySensor.notifyDevices(); // Notifies all connected devices
+    hallwayLight.update();         // Should turn off the light
+    std::cout << "Current Light Status: " << hallwayLight.getStatus() << "\n" << std::endl;
+
+}
+void testSection() {
+    // Use std::string variables instead of string literals
+    std::string livingRoomName = "Living Room";
+    std::string kitchenName = "Kitchen";
+
+    // Create Room instances using the string variables
+    Room* livingRoom = new Room(livingRoomName);
+    Room* kitchen = new Room(kitchenName);
+
+    // Rest of the code remains unchanged...
+    livingRoom->add(new Light());
+    livingRoom->add(new Thermostat());
+    livingRoom->add(new DoorLock());
+
+    kitchen->add(new Light());
+    kitchen->add(new Thermostat());
+
+    Section homeSection("Home Section");
+    homeSection.add(livingRoom);
+    homeSection.add(kitchen);
+
+    std::cout << "Initial Section Status:" << std::endl;
+    std::cout << homeSection.getStatus() << std::endl;
+
+    homeSection.performAction("ToggleOn");
+    std::cout << "Updated Section Status:" << std::endl;
+    std::cout << homeSection.getStatus() << std::endl;
+
+    homeSection.performAction("Lock");
+    std::cout << "Updated Section Status after locking doors:" << std::endl;
+    std::cout << homeSection.getStatus() << std::endl;
+
+    std::cout << "Removing the 'Kitchen' room from the section..." << std::endl;
+    homeSection.remove(kitchen);
+    std::cout << "Section Status after removing Kitchen:" << std::endl;
+    std::cout << homeSection.getStatus() << std::endl;
+}
 
 int main() {
 
     testComponent1();
     testComponent2();
     testComponent3();
+    testComponent4();
+    testSection();
     return 0;
 }
